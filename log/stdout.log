@@ -1,0 +1,80 @@
+Tue Dec  4 20:38:50 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_0_0>, 0, 0] 
+测试用例：test_func_0_0: pass
+Tue Dec  4 20:38:50 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_1_1>, 1, 1] 
+测试用例：test_func_1_1: pass
+Tue Dec  4 20:38:50 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_2_2>, 2, 2] 
+测试用例：test_func_2_2: pass
+Tue Dec  4 20:38:50 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_3_3>, 3, 3] 
+测试用例：test_func_3_3: pass
+Tue Dec  4 20:38:50 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_4_4>, 4, 4] 
+测试用例：test_func_4_4: pass
+Tue Dec  4 20:38:50 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_5_5>, 5, 5] 
+测试用例：test_func_5_5: pass
+Tue Dec  4 20:38:50 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_6_6>, 6, 6] 
+测试用例：test_func_6_6: pass
+Tue Dec  4 20:38:50 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_7_7>, 7, 7] 
+测试用例：test_func_7_7: pass
+Tue Dec  4 20:38:50 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_8_8>, 8, 8] 
+测试用例：test_func_8_8: pass
+Tue Dec  4 20:38:50 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_9_9>, 9, 9] 
+测试用例：test_func_9_9: pass
+Tue Dec  4 20:40:17 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_0_0>, 0, 0] 
+测试用例：test_func_0_0: pass
+Tue Dec  4 20:40:17 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_1_1>, 1, 1] 
+测试用例：test_func_1_1: pass
+Tue Dec  4 20:40:17 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_2_2>, 2, 2] 
+测试用例：test_func_2_2: pass
+Tue Dec  4 20:40:17 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_3_3>, 3, 3] 
+测试用例：test_func_3_3: pass
+Tue Dec  4 20:40:17 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_4_4>, 4, 4] 
+测试用例：test_func_4_4: pass
+Tue Dec  4 20:40:17 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_5_5>, 5, 5] 
+测试用例：test_func_5_5: pass
+Tue Dec  4 20:40:17 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_6_6>, 6, 6] 
+测试用例：test_func_6_6: pass
+Tue Dec  4 20:40:17 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_7_7>, 7, 7] 
+测试用例：test_func_7_7: pass
+Tue Dec  4 20:40:17 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_8_8>, 8, 8] 
+测试用例：test_func_8_8: pass
+Tue Dec  4 20:40:17 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_9_9>, 9, 9] 
+测试用例：test_func_9_9: pass
+Tue Dec  4 20:41:03 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_0_0>, 0, 0] 
+测试用例：test_func_0_0: pass
+okkkkTue Dec  4 20:41:03 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_1_1>, 1, 1] 
+测试用例：test_func_1_1: pass
+okkkkTue Dec  4 20:41:03 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_2_2>, 2, 2] 
+测试用例：test_func_2_2: pass
+okkkkTue Dec  4 20:41:03 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_3_3>, 3, 3] 
+测试用例：test_func_3_3: pass
+okkkkTue Dec  4 20:41:03 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_4_4>, 4, 4] 
+测试用例：test_func_4_4: pass
+okkkkTue Dec  4 20:41:03 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_5_5>, 5, 5] 
+测试用例：test_func_5_5: pass
+okkkkTue Dec  4 20:41:03 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_6_6>, 6, 6] 
+测试用例：test_func_6_6: pass
+okkkkTue Dec  4 20:41:03 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_7_7>, 7, 7] 
+测试用例：test_func_7_7: pass
+okkkkTue Dec  4 20:41:03 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_8_8>, 8, 8] 
+测试用例：test_func_8_8: pass
+okkkkTue Dec  4 20:41:03 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_9_9>, 9, 9] 
+测试用例：test_func_9_9: pass
+okkkkTue Dec  4 20:42:22 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_0_0>, 0, 0] 
+Tue Dec  4 20:42:22 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_1_1>, 1, 1] 
+Tue Dec  4 20:42:22 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_2_2>, 2, 2] 
+Tue Dec  4 20:42:22 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_3_3>, 3, 3] 
+Tue Dec  4 20:42:22 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_4_4>, 4, 4] 
+Tue Dec  4 20:42:22 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_5_5>, 5, 5] 
+Tue Dec  4 20:42:22 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_6_6>, 6, 6] 
+Tue Dec  4 20:42:22 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_7_7>, 7, 7] 
+Tue Dec  4 20:42:22 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_8_8>, 8, 8] 
+Tue Dec  4 20:42:22 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_9_9>, 9, 9] 
+Mon Dec 10 21:56:40 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_0_0>, 0, 0] 
+Mon Dec 10 21:56:40 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_1_1>, 1, 1] 
+Mon Dec 10 21:56:40 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_2_2>, 2, 2] 
+Mon Dec 10 21:56:40 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_3_3>, 3, 3] 
+Mon Dec 10 21:56:40 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_4_4>, 4, 4] 
+Mon Dec 10 21:56:40 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_5_5>, 5, 5] 
+Mon Dec 10 21:56:40 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_6_6>, 6, 6] 
+Mon Dec 10 21:56:40 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_7_7>, 7, 7] 
+Mon Dec 10 21:56:40 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_8_8>, 8, 8] 
+Mon Dec 10 21:56:40 2018[INFO]:function [action],args=[<setattr.TestCase testMethod=test_func_9_9>, 9, 9] 
