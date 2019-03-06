@@ -1,9 +1,11 @@
 import unittest
-from test.pageObject import basepage
-from common.browser import browser
-from common.htmlrunner import reportgen
-from ddt import data,ddt
 from time import sleep
+
+from ddt import data,ddt
+
+from common.browser import browser
+from common.pageObject import basepage
+
 
 @ddt
 class Test_Search3(unittest.TestCase):

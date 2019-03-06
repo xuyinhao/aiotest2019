@@ -1,8 +1,8 @@
 import unittest
-from test.pageObject import basepage
+
 from common.browser import browser
-from ddt import data,ddt
-from time import sleep
+from common.pageObject import basepage
+
 
 class Test_Search(unittest.TestCase):
     def setUp(self):
@@ -17,7 +17,7 @@ class Test_Search(unittest.TestCase):
     def testsearch(self,tests):
       #  self.driver=browser()
         try:
-            opendb=basepage.BaiduPage(self.driver)
+            opendb= basepage.BaiduPage(self.driver)
             opendb.open()
             opendb.search(tests)
             opendb.click_bdyx()

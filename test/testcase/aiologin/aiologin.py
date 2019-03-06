@@ -1,11 +1,7 @@
-import unittest
 from time import sleep
-
-from ddt import data,ddt
-
+from ddt import data,ddt,unpack
 from common.browser import browser
 from common.pageObject import basepage
-
 
 @ddt
 class Test_Search2(unittest.TestCase):
@@ -14,7 +10,7 @@ class Test_Search2(unittest.TestCase):
         cls.driver=browser()
       #  cls.driver=driver
         cls.driver.implicitly_wait(30)
-        print('test_open')
+
         cls.opendb = basepage.BaiduPage(cls.driver)
         cls.opendb.open()
         cls.opendb=cls.opendb
@@ -54,4 +50,3 @@ class Test_Search2(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-

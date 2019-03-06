@@ -1,5 +1,5 @@
 import HTMLTestRunner
-def reportgen():
+def reportgen(report_path,title,descrip):
     report_path="../report/report.html"
     fp=open(report_path,"wb")
     runner=HTMLTestRunner.HTMLTestRunner(stream=fp,

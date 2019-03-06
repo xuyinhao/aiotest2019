@@ -1,5 +1,5 @@
 import unittest
-from runtest.common import loggering
+# from common import loggering
 from ddt import data,ddt
 
 @ddt
@@ -17,9 +17,9 @@ class testProductTestCase(unittest.TestCase):
         test_name.append(test_data)
     # print(*test_name)
     #
-        #多个装饰器 应用时顺序时相反的
+        #多个装饰器 应用时顺序是相反的
     @data(*test_name)
-    @loggering(level='INFO2')
+    # @loggering(level='INFO2')
     def testfloat(self,test_name):
         print(test_name)
 
