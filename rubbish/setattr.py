@@ -7,7 +7,7 @@ class TestCase(unittest.TestCase):
         print('stt')
         pass
 
-    @loggering(level='INFO')
+    # @loggering(level='INFO')
     def action(self,arg1,arg2):
         # print(arg1,arg2)
         arg1=arg1
