@@ -1,4 +1,4 @@
-import  configparser
+import configparser
 import os
 class ReadConfig:
     def __init__(self,filepath=None):
@@ -10,10 +10,11 @@ class ReadConfig:
         self.cf = configparser.ConfigParser()
         self.cf.read(configpath)
     def getserver(self, parm):
-        secs=self.cf.sections()
         return self.cf.get("server",parm)
     def getbw(self):
         return self.cf.get("brower","bw")
+    def getConfigInfo(self,section,parm):
+        return self.cf.get(section,parm)
 if __name__ == '__main__':
     test=ReadConfig()
     serverhost=test.getserver('host')

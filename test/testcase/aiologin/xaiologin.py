@@ -7,25 +7,34 @@ import unittest
 from selenium import webdriver
 # t=webdriver.Chrome()
 
-
-@ddt
-class TestLogin(unittest.TestCase):
-
+class TestLoginCheck(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         # global test
         cls.test = aiologinpage.AioLogin(webdriver.Chrome())
         cls.test.getConfUrl()
-
        # print('start TestSearch')
+
     @classmethod
     def tearDownClass(cls):
-        TestLogin().test.browerClose()
+        TestLoginCheck().test.browerClose()
         pass
-    logindata = ReadExcel().getValue('login')
-    @data(*logindata)
-    @unpack
-    def testcase2(self,username,passwd,result):
+
+    def testcase1(self):
+        username = 'adminxx1'
+        passwd = 'ad'
+        result = False
+        self.test.setUsername(username)
+        self.test.setPassword(passwd)
+        self.test.typeLoginBtn()
+        # 断言登录结果和预期结果是否一致
+        # self.assertEqual(self.test.checkLoginResult(result),True,msg="login_test fail")
+        self.assertTrue(self.test.checkLoginResult(result),
+                        msg="\r  login_test fail \r  username :%s \r    passwd : %s " %(username,passwd))
+    def testcase2(self):
+        username = 'xx2'
+        passwd = 'ad22'
+        result = False
         self.test.setUsername(username)
         self.test.setPassword(passwd)
         self.test.typeLoginBtn()
