@@ -1,0 +1,20 @@
+2019-03-12 08:34:23,833_MainThread_[INFO] : Enter username: admin
+2019-03-12 08:34:24,131_MainThread_[INFO] : Enter password: admin
+2019-03-12 08:34:29,343_MainThread_[INFO] : devgroup wait 2s
+2019-03-12 08:34:31,374_MainThread_[INFO] : default group exist is : True
+2019-03-12 08:34:31,640_MainThread_[INFO] : dev22222p1111 group exist is : True
+2019-03-12 08:34:31,641_MainThread_[INFO] : initweb check dev22222p1111 grp : pass
+2019-03-12 08:34:31,641_MainThread_[INFO] : dev22222p1111pass
+2019-03-12 08:35:15,950_MainThread_[INFO] : Enter username: admin
+2019-03-12 08:35:16,129_MainThread_[INFO] : Enter password: admin
+2019-03-12 08:35:18,234_MainThread_[INFO] : devgroup wait 2s
+2019-03-12 08:35:20,246_MainThread_[INFO] : default group exist is : True
+2019-03-12 08:35:24,841_MainThread_[INFO] : xxaaaa1 group exist is : True
+2019-03-12 08:35:24,841_MainThread_[INFO] : initweb check xxaaaa1 grp : pass
+2019-03-12 08:35:24,841_MainThread_[INFO] : dev22222p1111pass
+2019-03-12 08:35:58,707_MainThread_[INFO] : Enter username: admin
+2019-03-12 08:35:58,893_MainThread_[INFO] : Enter password: admin
+2019-03-12 08:36:00,539_MainThread_[INFO] : devgroup wait 2s
+2019-03-12 08:36:02,961_MainThread_[INFO] : default group exist is : True
+2019-03-12 08:36:08,261_MainThread_[INFO] : dd group exist is : False
+2019-03-12 08:36:08,261_MainThread_[ERROR] : dev22222p1111error

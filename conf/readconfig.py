@@ -13,7 +13,7 @@ class ReadConfig:
         return self.cf.get("server",parm)
     def getbw(self):
         return self.cf.get("brower","bw")
-    def getConfigInfo(self,section,parm):
+    def get_configinfo(self,section,parm):
         return self.cf.get(section,parm)
 if __name__ == '__main__':
     test=ReadConfig()

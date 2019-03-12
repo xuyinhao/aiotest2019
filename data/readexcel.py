@@ -17,13 +17,13 @@ class ReadExcel():
             root_dir = os.path.dirname(os.path.abspath(__file__))
             configpath = os.path.join(root_dir,"testdata.xlsx")
         self.cf = load_workbook(filename=configpath)
-    def getRowNum(self, parm):
+    def get_row_totlenum(self, parm):
         login_sheet = self.cf[str(parm)]
         return login_sheet.max_row
-    def getColumnNum(self,parm):
+    def get_column_totlenum(self,parm):
         login_sheet = self.cf[str(parm)]
         return login_sheet.max_column
-    def getRowColNum(self,parm):
+    def get_rowcol_num(self,parm):
         login_sheet = self.cf[str(parm)]
         return (login_sheet.max_row , login_sheet.max_column)
     # def letterschange(self,colnum):
@@ -32,7 +32,7 @@ class ReadExcel():
 
     def getValue(self,sheetparm):
         # print(self.letterschange(columnnum))
-        (max_rownum,max_colnum) = self.getRowColNum(sheetparm)
+        (max_rownum,max_colnum) = self.get_rowcol_num(sheetparm)
         a = [];b = [];
         self.login_sheet = self.cf[sheetparm]
         for now_row in range(2, max_rownum + 1):

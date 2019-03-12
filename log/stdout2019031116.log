@@ -1,0 +1,35 @@
+2019-03-11 16:21:58,694_MainThread_[ERROR] : Enter username: admin
+2019-03-11 16:21:58,862_MainThread_[ERROR] : Enter password: admin
+2019-03-11 16:22:51,276_MainThread_[ERROR] : Enter username: admin
+2019-03-11 16:22:51,487_MainThread_[ERROR] : Enter password: admin
+2019-03-11 16:29:12,675_MainThread_[ERROR] : Enter username: admin
+2019-03-11 16:29:12,858_MainThread_[ERROR] : Enter password: admin
+2019-03-11 16:38:24,561_MainThread_[ERROR] : Enter username: admin
+2019-03-11 16:38:24,741_MainThread_[ERROR] : Enter password: admin
+2019-03-11 16:44:36,381_MainThread_[ERROR] : Enter username: admin
+2019-03-11 16:44:36,557_MainThread_[ERROR] : Enter password: admin
+2019-03-11 16:45:27,395_MainThread_[ERROR] : Enter username: admin
+2019-03-11 16:45:27,573_MainThread_[ERROR] : Enter password: admin
+2019-03-11 16:45:31,115_MainThread_[INFO] : False
+2019-03-11 16:47:30,782_MainThread_[ERROR] : Enter username: admin
+2019-03-11 16:47:30,969_MainThread_[ERROR] : Enter password: admin
+2019-03-11 16:47:32,425_MainThread_[INFO] : False
+2019-03-11 16:49:51,740_MainThread_[ERROR] : Enter username: admin
+2019-03-11 16:49:51,935_MainThread_[ERROR] : Enter password: admin
+2019-03-11 16:49:53,742_MainThread_[INFO] : True
+2019-03-11 16:50:14,688_MainThread_[ERROR] : Enter username: admin
+2019-03-11 16:50:14,869_MainThread_[ERROR] : Enter password: admin
+2019-03-11 16:50:17,058_MainThread_[INFO] : True
+2019-03-11 16:50:29,721_MainThread_[ERROR] : Enter username: admin
+2019-03-11 16:50:29,902_MainThread_[ERROR] : Enter password: admin
+2019-03-11 16:50:31,337_MainThread_[INFO] : False
+2019-03-11 16:52:29,007_MainThread_[ERROR] : Enter username: admin
+2019-03-11 16:52:29,190_MainThread_[ERROR] : Enter password: admin
+2019-03-11 16:55:12,997_MainThread_[INFO] : Enter username: admin
+2019-03-11 16:55:13,201_MainThread_[INFO] : Enter password: admin
+2019-03-11 16:58:00,636_MainThread_[INFO] : Enter username: admin
+2019-03-11 16:58:00,825_MainThread_[INFO] : Enter password: admin
+2019-03-11 16:58:02,760_MainThread_[ERROR] : initweb check default grp error
+2019-03-11 16:58:46,194_MainThread_[INFO] : Enter username: admin
+2019-03-11 16:58:46,376_MainThread_[INFO] : Enter password: admin
+2019-03-11 16:58:48,352_MainThread_[ERROR] : initweb check default grp error

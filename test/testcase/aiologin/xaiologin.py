@@ -24,23 +24,23 @@ class TestLoginCheck(unittest.TestCase):
         username = 'adminxx1'
         passwd = 'ad'
         result = False
-        self.test.setUsername(username)
-        self.test.setPassword(passwd)
-        self.test.typeLoginBtn()
+        self.test.set_username(username)
+        self.test.set_password(passwd)
+        self.test.type_login_btn()
         # 断言登录结果和预期结果是否一致
         # self.assertEqual(self.test.checkLoginResult(result),True,msg="login_test fail")
-        self.assertTrue(self.test.checkLoginResult(result),
+        self.assertTrue(self.test.check_login_result(result),
                         msg="\r  login_test fail \r  username :%s \r    passwd : %s " %(username,passwd))
     def testcase2(self):
         username = 'xx2'
         passwd = 'ad22'
         result = False
-        self.test.setUsername(username)
-        self.test.setPassword(passwd)
-        self.test.typeLoginBtn()
+        self.test.set_username(username)
+        self.test.set_password(passwd)
+        self.test.type_login_btn()
         # 断言登录结果和预期结果是否一致
         # self.assertEqual(self.test.checkLoginResult(result),True,msg="login_test fail")
-        self.assertTrue(self.test.checkLoginResult(result),
+        self.assertTrue(self.test.check_login_result(result),
                         msg="\r  login_test fail \r  username :%s \r    passwd : %s " %(username,passwd))
 
        # self.assertEqual(self.test.get_title(),u"主页")

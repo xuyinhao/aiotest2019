@@ -1,0 +1,62 @@
+2019-03-11 17:22:09,066_MainThread_[INFO] : Enter username: admin
+2019-03-11 17:22:09,242_MainThread_[INFO] : Enter password: admin
+2019-03-11 17:22:22,997_MainThread_[INFO] : Enter username: admin
+2019-03-11 17:22:23,168_MainThread_[INFO] : Enter password: admin
+2019-03-11 17:24:23,086_MainThread_[INFO] : Enter username: admin
+2019-03-11 17:24:23,259_MainThread_[INFO] : Enter password: admin
+2019-03-11 17:24:24,735_MainThread_[ERROR] : initweb check default grp : error
+2019-03-11 17:26:25,449_MainThread_[INFO] : Enter username: admin
+2019-03-11 17:26:25,667_MainThread_[INFO] : Enter password: admin
+2019-03-11 17:28:29,070_MainThread_[INFO] : Enter username: admin
+2019-03-11 17:28:29,250_MainThread_[INFO] : Enter password: admin
+2019-03-11 17:29:37,364_MainThread_[INFO] : Enter username: admin
+2019-03-11 17:29:37,569_MainThread_[INFO] : Enter password: admin
+2019-03-11 17:30:43,238_MainThread_[INFO] : Enter username: admin
+2019-03-11 17:30:43,495_MainThread_[INFO] : Enter password: admin
+2019-03-11 17:32:09,723_MainThread_[INFO] : Enter username: admin
+2019-03-11 17:32:09,902_MainThread_[INFO] : Enter password: admin
+2019-03-11 17:32:32,728_MainThread_[INFO] : Enter username: admin
+2019-03-11 17:32:32,910_MainThread_[INFO] : Enter password: admin
+2019-03-11 17:32:49,217_MainThread_[INFO] : Enter username: admin
+2019-03-11 17:32:49,388_MainThread_[INFO] : Enter password: admin
+2019-03-11 17:33:24,683_MainThread_[INFO] : Enter username: admin
+2019-03-11 17:33:24,864_MainThread_[INFO] : Enter password: admin
+2019-03-11 17:34:55,275_MainThread_[INFO] : Enter username: admin
+2019-03-11 17:34:55,499_MainThread_[INFO] : Enter password: admin
+2019-03-11 17:34:56,853_MainThread_[INFO] : devgroup wait 2s
+2019-03-11 17:39:45,786_MainThread_[INFO] : Enter username: admin
+2019-03-11 17:39:46,003_MainThread_[INFO] : Enter password: admin
+2019-03-11 17:39:47,244_MainThread_[INFO] : devgroup wait 2s
+2019-03-11 17:42:03,036_MainThread_[INFO] : Enter username: admin
+2019-03-11 17:42:03,223_MainThread_[INFO] : Enter password: admin
+2019-03-11 17:42:04,749_MainThread_[INFO] : devgroup wait 2s
+2019-03-11 17:42:39,599_MainThread_[INFO] : aa1
+2019-03-11 17:42:39,600_MainThread_[INFO] : aa2
+2019-03-11 17:42:39,600_MainThread_[INFO] : aa3
+2019-03-11 17:42:39,600_MainThread_[INFO] : aa4
+2019-03-11 17:42:39,600_MainThread_[INFO] : aa5
+2019-03-11 17:42:39,600_MainThread_[INFO] : aa6
+2019-03-11 17:42:39,600_MainThread_[INFO] : aa7
+2019-03-11 17:42:39,600_MainThread_[INFO] : aa8
+2019-03-11 17:42:39,600_MainThread_[INFO] : aa9
+2019-03-11 17:43:31,052_MainThread_[INFO] : Enter username: admin
+2019-03-11 17:43:31,252_MainThread_[INFO] : Enter password: admin
+2019-03-11 17:43:32,684_MainThread_[INFO] : devgroup wait 2s
+2019-03-11 17:45:36,036_MainThread_[INFO] : Enter username: admin
+2019-03-11 17:45:36,214_MainThread_[INFO] : Enter password: admin
+2019-03-11 17:45:37,859_MainThread_[INFO] : devgroup wait 2s
+2019-03-11 17:48:13,505_MainThread_[INFO] : Enter username: admin
+2019-03-11 17:48:13,697_MainThread_[INFO] : Enter password: admin
+2019-03-11 17:48:15,312_MainThread_[INFO] : devgroup wait 2s
+2019-03-11 17:55:50,796_MainThread_[INFO] : Enter username: admin
+2019-03-11 17:55:50,976_MainThread_[INFO] : Enter password: admin
+2019-03-11 17:55:52,471_MainThread_[INFO] : devgroup wait 2s
+2019-03-11 17:56:55,930_MainThread_[INFO] : Enter username: admin
+2019-03-11 17:56:56,132_MainThread_[INFO] : Enter password: admin
+2019-03-11 17:56:57,719_MainThread_[INFO] : devgroup wait 2s
+2019-03-11 17:58:22,714_MainThread_[INFO] : Enter username: admin
+2019-03-11 17:58:22,883_MainThread_[INFO] : Enter password: admin
+2019-03-11 17:58:24,310_MainThread_[INFO] : devgroup wait 2s
+2019-03-11 17:59:32,041_MainThread_[INFO] : Enter username: admin
+2019-03-11 17:59:32,214_MainThread_[INFO] : Enter password: admin
+2019-03-11 17:59:33,740_MainThread_[INFO] : devgroup wait 2s
