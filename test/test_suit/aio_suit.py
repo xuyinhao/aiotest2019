@@ -1,9 +1,4 @@
 from common import htmlrunner
-from test.testcase.aiologin.xaiologin import TestLoginCheck
-from test.testcase.aiologin.aiologin import TestLogin
-from test.testcase import aiologin
-import unittest
-from common.logpy import LogHandler
 
 if __name__ == '__main__':
     runner = htmlrunner.GenHtmlReport().reportgen('aio-1','no description')

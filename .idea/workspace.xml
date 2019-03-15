@@ -2,23 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="526afcd5-3702-4ed7-8fdb-d1f048b68d08" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/common/pageObject/aiosetting.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/reportlog20190308_154139.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/reportlog20190308_154150.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/reportlog20190308_154231.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/reportlog20190308_154548.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/stdout2019030815.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/log/stdout2019031111.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/log/stdout2019031116.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/log/stdout2019031117.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/log/stdout2019031118.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/log/stdout2019031208.log" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/base_page.py" afterPath="$PROJECT_DIR$/common/base_page.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/logpy.py" afterPath="$PROJECT_DIR$/common/logpy.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/pageObject/aiologinpage.py" afterPath="$PROJECT_DIR$/common/pageObject/aiologinpage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/readconfig.py" afterPath="$PROJECT_DIR$/conf/readconfig.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/readexcel.py" afterPath="$PROJECT_DIR$/data/readexcel.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/testcase/aiologin/aiologin.py" afterPath="$PROJECT_DIR$/test/testcase/aiologin/aiologin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/testcase/aiologin/xaiologin.py" afterPath="$PROJECT_DIR$/test/testcase/aiologin/xaiologin.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/common/pageObject/loginpage.py" afterPath="$PROJECT_DIR$/common/pageObject/devgrppage.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/test_suit/run_test_1.py" afterPath="$PROJECT_DIR$/rubbish/run_test_1.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/test_suit/run_test_2_suite.py" afterPath="$PROJECT_DIR$/rubbish/run_test_2_suite.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/pageObject/devgrppage.py" afterPath="$PROJECT_DIR$/common/pageObject/devgrppage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/config.ini" afterPath="$PROJECT_DIR$/conf/config.ini" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_suit/aio_suit.py" afterPath="$PROJECT_DIR$/test/test_suit/aio_suit.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/log/stdout2019031115.log" afterPath="$PROJECT_DIR$/common/pageObject/homepageobj.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/testcase/aiologin/__init__.py" afterPath="$PROJECT_DIR$/test/testcase/devgrptest.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/testcase/aiologin/aiologin.py" afterPath="$PROJECT_DIR$/test/testcase/aiologin.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/testcase/aiologin/xaiologin.py" afterPath="$PROJECT_DIR$/test/testcase/xaiologin.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,17 +28,18 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/aiotest2019$testc.coverage" NAME="testc Coverage Results" MODIFIED="1551946276645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rubbish" />
-    <SUITE FILE_PATH="coverage/aiotest2019$Unittests_in_aiologin.coverage" NAME="Unittests in aiologin Coverage Results" MODIFIED="1551942550508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/testcase/aiologin" />
     <SUITE FILE_PATH="coverage/aiotest2019$htmlrunner.coverage" NAME="htmlrunner Coverage Results" MODIFIED="1552022041311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
     <SUITE FILE_PATH="coverage/aiotest2019$readconfig.coverage" NAME="readconfig Coverage Results" MODIFIED="1551772353806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/conf" />
     <SUITE FILE_PATH="coverage/aiotest2019$aio_suit.coverage" NAME="aio_suit Coverage Results" MODIFIED="1552031147417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/test_suit" />
-    <SUITE FILE_PATH="coverage/aiotest2019$aiologinpage.coverage" NAME="aiologinpage Coverage Results" MODIFIED="1552292565042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common/pageObject" />
     <SUITE FILE_PATH="coverage/aiotest2019$aiologin.coverage" NAME="aiologin Coverage Results" MODIFIED="1552275210610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/testcase/aiologin" />
-    <SUITE FILE_PATH="coverage/aiotest2019$devgrppage.coverage" NAME="devgrppage Coverage Results" MODIFIED="1552350953736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common/pageObject" />
     <SUITE FILE_PATH="coverage/aiotest2019$readexcel.coverage" NAME="readexcel Coverage Results" MODIFIED="1551940840493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/aiotest2019$Unittests_in_aiologin.coverage" NAME="Unittests in aiologin Coverage Results" MODIFIED="1551942550508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/testcase/aiologin" />
+    <SUITE FILE_PATH="coverage/aiotest2019$aiologinpage.coverage" NAME="aiologinpage Coverage Results" MODIFIED="1552632992060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common/pageObject" />
+    <SUITE FILE_PATH="coverage/aiotest2019$devgrppage.coverage" NAME="devgrppage Coverage Results" MODIFIED="1552640488738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common/pageObject" />
     <SUITE FILE_PATH="coverage/aiotest2019$login_1.coverage" NAME="login_1 Coverage Results" MODIFIED="1551771068604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/testcase/baidu1" />
     <SUITE FILE_PATH="coverage/aiotest2019$logpy.coverage" NAME="logpy Coverage Results" MODIFIED="1552275152460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
-    <SUITE FILE_PATH="coverage/aiotest2019$base_page.coverage" NAME="base_page Coverage Results" MODIFIED="1552270798239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
+    <SUITE FILE_PATH="coverage/aiotest2019$homepageobj.coverage" NAME="homepageobj Coverage Results" MODIFIED="1552622221135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common/pageObject" />
+    <SUITE FILE_PATH="coverage/aiotest2019$base_page.coverage" NAME="base_page Coverage Results" MODIFIED="1552639930923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -51,35 +50,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="aiologin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/testcase/aiologin/aiologin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#22#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="aiologinpage.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/pageObject/aiologinpage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
-              <folding>
-                <element signature="e#75#105#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base_page.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base_page.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/base_page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.5333333">
-              <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.33233532">
+              <caret line="110" column="16" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -87,33 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="devgrppage.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/common/pageObject/devgrppage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.06153846">
-              <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="by.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../python3/Lib/site-packages/selenium/webdriver/common/by.py">
+      <file leaf-file-name="screenimg.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/screenimg.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webdriver.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../python3/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="819" column="10" selection-start-line="819" selection-start-column="10" selection-end-line="819" selection-end-column="49" />
+              <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="6" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -123,8 +76,42 @@
         <entry file="file://$PROJECT_DIR$/conf/config.ini">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="aiologinpage.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/pageObject/aiologinpage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="44" />
+              <folding>
+                <element signature="e#75#105#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="configparser.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../python3/Lib/configparser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1014" column="0" selection-start-line="1014" selection-start-column="0" selection-end-line="1014" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="devgrppage.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/pageObject/devgrppage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,21 +119,11 @@
       <file leaf-file-name="logpy.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/logpy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.733334">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="74" column="43" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="43" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stdout2019031111.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log/stdout2019031111.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -155,8 +132,20 @@
         <entry file="file://$PROJECT_DIR$/conf/readconfig.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="homepageobj.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/pageObject/homepageobj.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="30" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -225,10 +214,12 @@
         <option value="$PROJECT_DIR$/test/testcase/aiologin/xaiologin.py" />
         <option value="$PROJECT_DIR$/log/stdout2019031111.log" />
         <option value="$PROJECT_DIR$/test/testcase/aiologin/aiologin.py" />
-        <option value="$PROJECT_DIR$/common/pageObject/aiologinpage.py" />
-        <option value="$PROJECT_DIR$/common/base_page.py" />
         <option value="$PROJECT_DIR$/common/logpy.py" />
+        <option value="$PROJECT_DIR$/common/pageObject/homepageobj.py" />
+        <option value="$PROJECT_DIR$/test/testcase/devgrptest.py" />
+        <option value="$PROJECT_DIR$/common/pageObject/aiologinpage.py" />
         <option value="$PROJECT_DIR$/conf/config.ini" />
+        <option value="$PROJECT_DIR$/common/base_page.py" />
         <option value="$PROJECT_DIR$/common/pageObject/devgrppage.py" />
       </list>
     </option>
@@ -239,9 +230,9 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="42" />
-    <option name="y" value="155" />
-    <option name="width" value="1168" />
+    <option name="x" value="59" />
+    <option name="y" value="96" />
+    <option name="width" value="1087" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -269,7 +260,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -320,50 +310,6 @@
               <option name="myItemId" value="aiotest2019" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testcase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aiologin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aiotest2019" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aiotest2019" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test_suit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aiotest2019" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aiotest2019" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rubbish" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -376,20 +322,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="log" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aiotest2019" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aiotest2019" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -441,30 +373,31 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/test/test_suite_ddt_data.py" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="SearchEverywhereHistoryKey" value="urlConf&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\share\selenium\aiostore\aiotest2019\test\testcase" />
+      <recent name="F:\share\selenium\aiostore\aiotest2019\rubbish" />
+      <recent name="F:\share\selenium\aiostore\aiotest2019\test\test_suit" />
+      <recent name="F:\share\selenium\aiostore\aiotest2019" />
+      <recent name="F:\python-s\runtest\test\testcase\baidu2" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\share\selenium\aiostore\aiotest2019\test\testcase\aiologin" />
       <recent name="F:\share\selenium\aiostore\aiotest2019\test\test_suit" />
       <recent name="F:\share\selenium\aiostore\aiotest2019\test\testcase\baidu1" />
       <recent name="F:\python-s\runtest\common\filereader" />
       <recent name="F:\python-s\runtest\test\test_suit" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\share\selenium\aiostore\aiotest2019\rubbish" />
-      <recent name="F:\share\selenium\aiostore\aiotest2019\test\test_suit" />
-      <recent name="F:\share\selenium\aiostore\aiotest2019" />
-      <recent name="F:\python-s\runtest\test\testcase\baidu2" />
-      <recent name="F:\python-s\runtest\test\testcase\baidu1" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -480,24 +413,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.devgrppage">
-    <configuration default="false" name="logpy" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="runtest" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/logpy.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="aiologinpage" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -529,7 +444,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="runtest" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/testcase/aiologin/aiologin.py" />
+      <option name="SCRIPT_NAME" value="F:\share\selenium\aiostore\aiotest2019\test\testcase\aiologin.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -566,6 +481,24 @@
       <module name="runtest" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/pageObject/devgrppage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="homepageobj" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common/pageObject" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="runtest" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/pageObject/homepageobj.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -794,19 +727,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.ddt_data" />
-      <item index="1" class="java.lang.String" itemvalue="Python.logpy" />
-      <item index="2" class="java.lang.String" itemvalue="Python.aiologinpage" />
-      <item index="3" class="java.lang.String" itemvalue="Python.aiologin" />
-      <item index="4" class="java.lang.String" itemvalue="Python.base_page" />
-      <item index="5" class="java.lang.String" itemvalue="Python.devgrppage" />
+      <item index="1" class="java.lang.String" itemvalue="Python.aiologinpage" />
+      <item index="2" class="java.lang.String" itemvalue="Python.aiologin" />
+      <item index="3" class="java.lang.String" itemvalue="Python.base_page" />
+      <item index="4" class="java.lang.String" itemvalue="Python.devgrppage" />
+      <item index="5" class="java.lang.String" itemvalue="Python.homepageobj" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.devgrppage" />
-        <item index="1" class="java.lang.String" itemvalue="Python.aiologinpage" />
-        <item index="2" class="java.lang.String" itemvalue="Python.aiologin" />
-        <item index="3" class="java.lang.String" itemvalue="Python.logpy" />
-        <item index="4" class="java.lang.String" itemvalue="Python.base_page" />
+        <item index="1" class="java.lang.String" itemvalue="Python.base_page" />
+        <item index="2" class="java.lang.String" itemvalue="Python.aiologinpage" />
+        <item index="3" class="java.lang.String" itemvalue="Python.homepageobj" />
+        <item index="4" class="java.lang.String" itemvalue="Python.aiologin" />
       </list>
     </recent_temporary>
   </component>
@@ -856,19 +789,19 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="42" y="155" width="1168" height="735" extended-state="1" />
-    <editor active="true" />
+    <frame x="59" y="96" width="1087" height="735" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21769911" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28598666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3039867" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3482587" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39939025" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39871383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -905,38 +838,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/common/sendmail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_suit/aio_suit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#29#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/config.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rubbish/setattr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rubbish/test_suite_ddt_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -956,7 +857,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -964,7 +864,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="764" column="8" selection-start-line="764" selection-start-column="8" selection-end-line="764" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1024,7 +923,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="736" column="8" selection-start-line="736" selection-start-column="8" selection-end-line="736" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1061,7 +959,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="300" column="0" selection-start-line="300" selection-start-column="0" selection-end-line="300" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1093,27 +990,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../python3/Lib/configparser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="780" column="0" selection-start-line="780" selection-start-column="0" selection-end-line="780" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../python3/Lib/distutils/log.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.7333333">
           <caret line="37" column="10" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/testcase/aiologin/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1121,7 +1001,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="627" column="0" selection-start-line="627" selection-start-column="0" selection-end-line="627" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1129,7 +1008,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1137,7 +1015,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1145,7 +1022,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1153,7 +1029,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="25" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1161,7 +1036,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1169,25 +1043,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/testcase/aiologin/xaiologin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#22#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/htmlrunner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1195,15 +1050,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/screenimg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1211,9 +1057,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#29#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1221,33 +1064,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1810" column="10" selection-start-line="1810" selection-start-column="10" selection-end-line="1810" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log/stdout2019031111.log">
+    <entry file="file://$PROJECT_DIR$/common/htmlrunner.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/testcase/aiologin/aiologin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../python3/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="819" column="10" selection-start-line="819" selection-start-column="10" selection-end-line="819" selection-end-column="49" />
-          <folding />
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1259,10 +1082,89 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../../python3/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="307" column="0" selection-start-line="307" selection-start-column="0" selection-end-line="307" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../python3/Lib/site-packages/selenium/webdriver/support/expected_conditions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../python3/Lib/site-packages/selenium/webdriver/remote/errorhandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="193" column="0" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/testcase/aiologin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/testcase/xaiologin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/testcase/devgrptest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/screenimg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="6" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/readconfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../python3/Lib/configparser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1014" column="0" selection-start-line="1014" selection-start-column="0" selection-end-line="1014" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/logpy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.733334">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="43" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="43" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -1272,45 +1174,39 @@
     <entry file="file://$PROJECT_DIR$/common/pageObject/aiologinpage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="44" />
           <folding>
             <element signature="e#75#105#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/base_page.py">
+    <entry file="file://$PROJECT_DIR$/common/pageObject/devgrppage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.5333333">
-          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
           <folding>
-            <element signature="e#0#27#0" expanded="true" />
+            <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/readconfig.py">
+    <entry file="file://$PROJECT_DIR$/common/pageObject/homepageobj.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/config.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/pageObject/devgrppage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06153846">
-          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+          <caret line="29" column="30" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="30" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/base_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33233532">
+          <caret line="110" column="16" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>

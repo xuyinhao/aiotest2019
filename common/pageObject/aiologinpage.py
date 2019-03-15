@@ -15,10 +15,12 @@ class AioLogin(BasePage):
     logg = LogHandler().getlog()
 
     username_loc = (By.NAME, "username")
-    password_loc = (By.CLASS_NAME, "password-text")
+    password_loc = (By.CSS_SELECTOR, "input[type='password']")
     login_loc = (By.CLASS_NAME, "login-btn")
+    login_loc_oem = (By.ID,"submit")
     check_login_loc = (By.CLASS_NAME,"error-tip")
     elements = [username_loc,password_loc,login_loc,check_login_loc]
+    log_menu = (By.CSS_SELECTOR,"[name='log']")
     logg.debug(elements)
     def set_username(self,username):
        # self.find_element(*self.username_loc).clear()
@@ -34,46 +36,51 @@ class AioLogin(BasePage):
         logg.info('Enter password: ' + password)
         sleep(0.1)
 
-    def type_login_btn(self):
-        self.click_btn(*self.login_loc)
+    def type_login_btn(self,OEM=None):
+        if OEM:
+            self.click_btn(*self.login_loc_oem)
+        else:
+            self.click_btn(*self.login_loc)
         sleep(0.1)
+        return  self._check_login_ok()
 
-    def check_login_result(self,testcase_login_result):
-        err_class_result = self.check_element_isexist(*self.check_login_loc)
-        flag = None
-        if err_class_result == False:
-            flag = True         #不存在元素，则页面已经跳转。登录成功
-        if err_class_result == True:
-            flag = False
+    def _check_login_ok(self):
+        ok_class_result = self.check_element_isexist(self.log_menu)
+        print("_check " + str(ok_class_result))
+        self.insert_error_img('error_check_login_ok')
+        return ok_class_result
 
-        if flag == testcase_login_result:
+    def check_login_result(self,testcase_login_expected_result):
+        flag = self._check_login_ok()
+        if flag == testcase_login_expected_result:
             result = True       #登录结果和预期结果一致，则返回成功
         else:
             result = False
-        # self.logg.info("check : " + str(flag) + " " + str(testcase_login_result) + " "
-        #                + "result : " + str(result))
+            logg.error("check : %s %s result : %s"
+                       % (str(flag),str(testcase_login_expected_result),str(result)))
         return result
     def correct_userpasswd_conf(self):
         self.tusername = readconfig.ReadConfig().get_configinfo('user','tuser')
         self.tpassword = readconfig.ReadConfig().get_configinfo('user','tpassword')
         self.urlvalue = (self.tusername,self.tpassword)
         return self.urlvalue
-    def correct_login(self):
+    def correct_login(self,OEM=None):
         self.get_conf_url()
         self.userpasswd = self.correct_userpasswd_conf()
         self.set_username(self.userpasswd[0])
         self.set_password(self.userpasswd[1])
-        self.type_login_btn()
-
+        login_result = self.type_login_btn(OEM=OEM)
+        return login_result
 
 
 if __name__ == '__main__':
+    # test=AioLogin(webdriver.Chrome(),"http://13.10.47.6:8088")
+    # test.correct_login(OEM=True)
     test=AioLogin(webdriver.Chrome())
-    test.correct_login()
-    # test.get_conf_url()
-    # test.set_username('admin')
-    # test.set_password('admin1')
-    # test.type_login_btn()
+    test.get_conf_url()
+    test.set_username('admin')
+    test.set_password('admin1')
+    test.type_login_btn()
     # print(test.check_login_result(False))
     # test.set_username('xx')
     # test.set_password('admixxn1')
