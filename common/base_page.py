@@ -8,11 +8,9 @@ from common.logpy import LogHandler
 
 import sys,time,os
 
-#一个登陆页面的BasePage
-
 class BasePage():
     '''
-    一个登陆页面的BasePage
+    页面的BasePage
     driver : self.wd
     '''
     global logg
