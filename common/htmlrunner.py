@@ -1,10 +1,29 @@
 import HTMLTestRunner
-def reportgen(report_path,title,descrip):
-    report_path="../report/report.html"
-    fp=open(report_path,"wb")
-    runner=HTMLTestRunner.HTMLTestRunner(stream=fp,
-                                         title=u'自动化测试-报告',
-                                         description=u'用例执行情况')
-    return runner
+import os
+class GenHtmlReport():
+    '''
+    gen html report
+    titlename,description_info
+    '''
+    def __init__(self):
+        '''
+        gen html report
+        titlename,description_info
+        '''
+        pass
+
+    def reportgen(self,titlename,descrip):
+        import time
+        date = time.strftime("%Y%m%d_%H%M%S", time.localtime())
+        filepath = os.path.abspath(__file__)
+        report_path = os.path.join(filepath+r"\..\..\log\reportlog"+ date +".html")
+
+        fp=open(report_path,"wb")
+        runner=HTMLTestRunner.HTMLTestRunner(stream=fp,
+                                             title=titlename,
+                                             description=descrip)
+        return runner
 if __name__ == '__main__':
-   reportgen()
+   test = GenHtmlReport()
+   print(test.reportgen(u'AIO-登录测试',u'mei没有'))
+
