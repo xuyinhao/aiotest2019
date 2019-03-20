@@ -18,7 +18,7 @@ class BasePage():
     # def __init__(self,driver=webdriver.Chrome(),url=None):
     def __init__(self,driver,url=None):
         '''
-        初始化 webdriver 并启动
+                        初始化 webdriver 并启动
         :param driver:  webdriver.Chrome()
         '''
         self.wd = driver
@@ -44,12 +44,16 @@ class BasePage():
     def brower_quit_all(self):
         '''退出浏览器'''
         return self.wd.quit()
+    
     def brower_setwindowssize(self,width,height,windowHandle='current'):
         self.wd.set_window_size(width,height,windowHandle)
+        
     def brower_refresh(self):
         self.wd.refresh()
+        
     def brower_forward(self):
         self.wd.forward()
+        
     def brower_backward(self):
         self.wd.back()
 
@@ -61,6 +65,7 @@ class BasePage():
     #元素操作
     def type_text(self,loc,text):
         return  self.wd.find_element(*loc).send_keys(text)
+    
     def clear_text(self,*loc):
         return self.wd.find_element(*loc).clear()
 
@@ -76,18 +81,25 @@ class BasePage():
     # def keyboard_send_f5(self):
     #     loc = (By.CSS_SELECTOR,"[name='log']")
     #     self.find_web_element(*loc).send_keys(Keys.F5)
+    
     #鼠标操作
     def mouse_right_click(self,*loc):
-
-        pass
+        elem = self.find_web_element(*loc)
+        self.actions.click(elem).perform(
+                                         )
     def mouse_left_click(self):
-        pass
+        elem = self.find_web_element(*loc)
+        self.actions.context_click(elem).perform()
+        
     def mouse_double_click(self):
-        pass
+        elem = self.find_web_element(*loc)
+        self.actions.double_click(elem)
+        
     def mouse_move_to_element(self,*loc):
         elem = self.find_web_element(*loc)
         self.actions.move_to_element(elem).perform()
-
+    def mouse_drag_and_drop(self):
+        pass
     #获取信息行为
     def get_web_url(self):
         return self.wd.current_url
