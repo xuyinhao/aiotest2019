@@ -47,10 +47,12 @@ class AioLogin(BasePage):
     def _check_login_ok(self):
         ok_class_result = self.check_element_isexist(self.log_menu)
         print("_check " + str(ok_class_result))
-        self.insert_error_img('error_check_login_ok')
+        sleep(0.5)
+        self.insert_success_img('check_login_ok')
         return ok_class_result
 
     def check_login_result(self,testcase_login_expected_result):
+
         flag = self._check_login_ok()
         if flag == testcase_login_expected_result:
             result = True       #登录结果和预期结果一致，则返回成功

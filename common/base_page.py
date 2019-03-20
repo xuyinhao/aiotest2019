@@ -6,7 +6,8 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
 from common.logpy import LogHandler
 
-import sys,time,os
+import sys,os,time
+from time import sleep
 
 class BasePage():
     '''
@@ -76,7 +77,11 @@ class BasePage():
         return self.wd.find_element(*loc).submit()
 
     def click_btn(self,*loc):
-        return self.wd.find_element(*loc).click()
+        try:
+            self.wd.find_element(*loc).click()
+            return True
+        except:
+            return False
 
     # def keyboard_send_f5(self):
     #     loc = (By.CSS_SELECTOR,"[name='log']")
@@ -149,15 +154,24 @@ class BasePage():
     def __inser_img(self,passorfailed,imgname):
         time_loc = time.strftime("%m%d_%H%M%S",time.localtime())
         file_path = os.path.abspath(__file__)
-        file_path = os.path.join(file_path+"/../../log/%s_%s.png" %(imgname,time_loc))
+        file_path = os.path.join(file_path+"/../../log/%s_%s_%s.png" %(passorfailed,imgname,time_loc))
         self.wd.get_screenshot_as_file(file_path)
-        logg.debug('insert_%s_img %s ' %(passorfailed,(file_path)))
+        logg.debug('Insert— %s_img %s ' %(passorfailed,(file_path)))
 
+    def insert_warning_img(self,imgname):
+        sleep(0.5)
+        self.__inser_img("waring",imgname)
     def insert_error_img(self,imgname):
+        sleep(0.5)
+        logg.error(imgname)
         self.__inser_img("error",imgname)
     def insert_success_img(self,imgname):
+        sleep(0.5)
+        logg.info(imgname)
         self.__inser_img("success",imgname)
     def insert_debug_img(self,imgname):
+        sleep(0.5)
+        logg.debug(imgname)
         self.__inser_img("debug",imgname)
 
     @classmethod
