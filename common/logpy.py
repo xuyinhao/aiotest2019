@@ -22,7 +22,7 @@ class LogHandler():
         #2 创建handler
 
         if not self.logger.handlers:
-            timestr = time.strftime('%Y%m%d%H',time.localtime(time.time()))
+            timestr = time.strftime('%Y%m%d',time.localtime(time.time()))
             logpypath = os.path.abspath(__file__)
             logname = logpypath + "/../../log/"+ "stdout"+ timestr + ".log"
             logpath = os.path.join(logname)

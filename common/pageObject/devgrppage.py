@@ -29,6 +29,8 @@ class DevgrpPage(HomePage):
     dev_list_add_submit = (By.CLASS_NAME,"custom-button")
     check_bynode_devlist = (By.CSS_SELECTOR,"td[title^='/dev']")
     bynode_devlist_firstdev =(By.CSS_SELECTOR,"td[style='padding-left: 10px;']")
+    #按照firstdev 获取同级哥哥节点 来拿到 DevID
+    get_bynode_devlist_firstdevID = (By.XPATH,"//td[starts-with(@title,'/dev')]/preceding-sibling::td[1]")
     def dev_list_elems(self,num):
         self.dev_list = (By.CSS_SELECTOR,"tr[data-index]:nth-child(%d)"%(num))
     #devgrp_name_click = By.CSS_SELECTOR,"td.has-split[title="+groupname+"]"
@@ -67,7 +69,10 @@ class DevgrpPage(HomePage):
             logg.error('%s error ： %s'%(sys._getframe().f_code.co_name,e))
             return False
 
-
+    def _get_firstdevID(self):
+        value = self.get_element_text(*self.get_bynode_devlist_firstdevID)
+        logg.info("firstdevID : %s "%(value))
+        return value
 
     def check_dialog_error(self):
         if self.check_element_isexist(self.error_dialog):
@@ -156,6 +161,11 @@ class DevgrpPage(HomePage):
 
     def select_firstonedevice_from_nodeipdevlist(self):
         if self.click_btn(*self.bynode_devlist_firstdev):
+            #获取一下当时的devID
+            value = self._get_firstdevID()
+            with open('.tmp','w') as f:
+                f.write(value)
+                f.close()
             self.click_btn(*self.dev_list_add_submit)
         sleep(2)
         if self.check_dialog_success():
@@ -164,6 +174,7 @@ class DevgrpPage(HomePage):
         else:
             logg.error("check_dialog_success error")
             return False
+
     def add_dev_by_nodeip(self):
         self.move_to_add_dev()
         if self.click_btn(*self.add_dev_bynode):
@@ -173,6 +184,7 @@ class DevgrpPage(HomePage):
         else:
             self.insert_error_img("通过nodeip增加设备 失败")
             return False
+
     def add_dev_to_devgrp_by_nodeip(self,devgrpname,nodeip):
         """仅仅添加第一个设备到devgrpname"""
         if self.click_devgroup_name(devgrpname):
@@ -189,8 +201,6 @@ class DevgrpPage(HomePage):
                 return False
         else:
             return False
-
-
 
         pass
 
@@ -226,9 +236,10 @@ class DevgrpPage(HomePage):
 if __name__ == '__main__':
     test = DevgrpPage(webdriver.Chrome())
     test.init_web()
-    test.create_devgrp("dev12")
+    # test.create_devgrp("dev12")
     # if test.click_devgroup_name("dev12"):
     #     test.add_dev_by_node_noclick_devgrp()
+   #支持按照ip为分组添加设备（默认是第一个dev）
     print(test.add_dev_to_devgrp_by_nodeip("dev12","10.11.12.30"))
 
 
