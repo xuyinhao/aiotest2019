@@ -11,6 +11,7 @@ from common.logpy import LogHandler
 class TestLogin(unittest.TestCase):
     global logg
     logg = LogHandler().getlog()
+    
     @classmethod
     def setUpClass(cls):
 
@@ -26,7 +27,7 @@ class TestLogin(unittest.TestCase):
 
     @data(*logindata)
     @unpack
-    def testcase2(self,username,passwd,result):
+    def test_case2(self,username,passwd,result):
         logg.info(username+" " + passwd +" " +str(result))
         self.test.set_username(username)
         self.test.set_password(passwd)
@@ -35,6 +36,7 @@ class TestLogin(unittest.TestCase):
         # self.assertEqual(self.test.checkLoginResult(result),True,msg="login_test fail")
         self.assertTrue(self.test.check_login_result(result),
                         msg="\r  login_test fail \r  username :%s \r    passwd : %s " %(username,passwd))
+
 
        # self.assertEqual(self.test.get_title(),u"主页")
     #测试一下 self.wd方法

@@ -5,29 +5,36 @@ from common.pageObject import aiologinpage
 from common.base_page import BasePage
 import unittest
 from selenium import webdriver
-from common.logpy import LogHandler
 # t=webdriver.Chrome()
-@ddt
-class TestLogin(unittest.TestCase):
-    global logg
-    logg = LogHandler().getlog()
+
+class TestLoginCheck(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-
+        # global test
         cls.test = aiologinpage.AioLogin(webdriver.Chrome())
-        cls.test.get_conf_url()
+        cls.test.getConfUrl()
        # print('start TestSearch')
+
     @classmethod
     def tearDownClass(cls):
-        # TestLogin().logg.info("brower quit")
-        TestLogin().test.brower_close()
+        TestLoginCheck().test.browerClose()
         pass
-    logindata = ReadExcel().getValue('login')
 
-    @data(*logindata)
-    @unpack
-    def testcase2(self,username,passwd,result):
-        logg.info(username+" " + passwd +" " +str(result))
+    def testcase1(self):
+        username = 'adminxx1'
+        passwd = 'ad'
+        result = False
+        self.test.set_username(username)
+        self.test.set_password(passwd)
+        self.test.type_login_btn()
+        # 断言登录结果和预期结果是否一致
+        # self.assertEqual(self.test.checkLoginResult(result),True,msg="login_test fail")
+        self.assertTrue(self.test.check_login_result(result),
+                        msg="\r  login_test fail \r  username :%s \r    passwd : %s " %(username,passwd))
+    def testcase2(self):
+        username = 'xx2'
+        passwd = 'ad22'
+        result = False
         self.test.set_username(username)
         self.test.set_password(passwd)
         self.test.type_login_btn()
