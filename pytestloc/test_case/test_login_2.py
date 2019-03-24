@@ -1,23 +1,30 @@
 from time import sleep
 from ddt import data,ddt,unpack
+from common.logpy import LogHandler
 from data.readexcel import  ReadExcel
 from common.pageObject import aiologinpage
 from common.base_page import BasePage
-import unittest
+import unittest,pytest
 from selenium import webdriver
 # t=webdriver.Chrome()
 
 class TestLoginCheck(unittest.TestCase):
+
     @classmethod
     def setUpClass(cls):
         # global test
+        global logg
+        logg = LogHandler().getlog()
         cls.test = aiologinpage.AioLogin(webdriver.Chrome())
-        cls.test.getConfUrl()
-       # print('start TestSearch')
+        getandcheck = cls.test.get_and_check_server_url()
+        if not getandcheck:
+            TestLoginCheck.tearDownClass()
+            logg.error("进入主页失败，err:14001")
+            return SystemExit(14001)
 
     @classmethod
     def tearDownClass(cls):
-        TestLoginCheck().test.browerClose()
+        TestLoginCheck().test.brower_close()
         pass
 
     def testcase1(self):

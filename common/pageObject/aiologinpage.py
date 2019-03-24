@@ -22,6 +22,15 @@ class AioLogin(BasePage):
     elements = [username_loc,password_loc,login_loc,check_login_loc]
     log_menu = (By.CSS_SELECTOR,"[name='log']")
     logg.debug(elements)
+    def get_and_check_server_url(self,OEMtitle=None):
+        self.get_conf_url()
+        if not OEMtitle:
+            if "LoongUI" != self.get_title():
+                return False
+        elif OEMtitle != self.get_title():
+            return False
+        return True
+
     def set_username(self,username):
        # self.find_element(*self.username_loc).clear()
         #self.find_element(*self.username_loc).send_keys(username)
@@ -38,34 +47,44 @@ class AioLogin(BasePage):
 
     def type_login_btn(self,OEM=None):
         if OEM:
-            self.click_btn(*self.login_loc_oem)
+            flag = self.click_btn(*self.login_loc_oem)
         else:
-            self.click_btn(*self.login_loc)
+            flag = self.click_btn(*self.login_loc)
         sleep(0.1)
-        return  self._check_login_ok()
+        return  flag
 
     def _check_login_ok(self):
+        ok_class_result = False
         ok_class_result = self.check_element_isexist(self.log_menu)
-        logg.debug("_check " + str(ok_class_result))
-        sleep(0.5)
+        logg.debug("__check login " + str(ok_class_result))
+        sleep(0.2)
         # self.insert_success_img('check_login_ok')
         return ok_class_result
+    def _check_login_fail(self):
+        fail_class_result = False
+        fail_class_result = self.check_element_isexist(self.login_loc)
+        logg.debug("__check not login" +str(fail_class_result))
+        sleep(0.1)
+        return fail_class_result
 
     def check_login_result(self,testcase_login_expected_result):
-
-        flag = self._check_login_ok()
-        if flag == testcase_login_expected_result:
-            result = True       #登录结果和预期结果一致，则返回成功
-            if True == testcase_login_expected_result:
+        flag = None
+        if testcase_login_expected_result:
+            if self._check_login_ok():
+                flag = True
                 self.insert_success_img("登录成功")
             else:
-                self.insert_success_img('登录用例 检查成功')
+                flag = False
+                self.insert_error_img("登录失败")
         else:
-            result = False
-            self.insert_error_img("登录 检查失败")
-            logg.error("check : %s %s result : %s"
-                       % (str(flag),str(testcase_login_expected_result),str(result)))
-        return result
+            if self._check_login_fail():
+                flag = True
+                self.insert_success_img('登录用例 检查成功')
+            else:
+                flag = False
+                self.insert_error_img('登录用例 检查失败')
+        return flag
+
     def correct_userpasswd_conf(self):
         self.tusername = readconfig.ReadConfig().get_configinfo('user','tuser')
         self.tpassword = readconfig.ReadConfig().get_configinfo('user','tpassword')

@@ -77,10 +77,12 @@ class BasePage():
         return self.wd.find_element(*loc).submit()
 
     def click_btn(self,*loc):
+        '''点击按钮'''
         try:
             self.wd.find_element(*loc).click()
             return True
-        except:
+        except Exception as e:
+            logg.error("click_btn error: %s" %(e))
             return False
 
     # def keyboard_send_f5(self):
@@ -92,11 +94,11 @@ class BasePage():
         elem = self.find_web_element(*loc)
         self.actions.click(elem).perform(
                                          )
-    def mouse_left_click(self):
+    def mouse_left_click(self,*loc):
         elem = self.find_web_element(*loc)
         self.actions.context_click(elem).perform()
         
-    def mouse_double_click(self):
+    def mouse_double_click(self,*loc):
         elem = self.find_web_element(*loc)
         self.actions.double_click(elem)
         
@@ -128,6 +130,7 @@ class BasePage():
             isexist = False
             logg.debug(' isexist or not  :',exc_info = True)
         return isexist
+
     def check_element_has_text(self,loc,text):
         '''
         检查元素文本信息是否存在
@@ -162,15 +165,15 @@ class BasePage():
         sleep(0.5)
         self.__inser_img("waring",imgname)
     def insert_error_img(self,imgname):
-        sleep(0.5)
+        sleep(0.2)
         logg.error(imgname)
         self.__inser_img("error",imgname)
     def insert_success_img(self,imgname):
-        sleep(0.5)
+        sleep(0.2)
         logg.info(imgname)
         self.__inser_img("success",imgname)
     def insert_debug_img(self,imgname):
-        sleep(0.5)
+        sleep(0.2)
         logg.debug(imgname)
         self.__inser_img("debug",imgname)
 
