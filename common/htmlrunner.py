@@ -25,5 +25,5 @@ class GenHtmlReport():
         return runner
 if __name__ == '__main__':
    test = GenHtmlReport()
-   print(test.reportgen(u'AIO-登录测试',u'mei没有'))
+   print(test.reportgen(u'AIO-登录测试—test',u'mei没有'))
 
