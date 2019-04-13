@@ -7,7 +7,7 @@ if __name__ == '__main__':
 
     runner.run(st1)
 
-    #创建添加class
+    #创建添加class Test
     # st = unittest.TestSuite(map(TestLoginCheck,['testcase1','testcase2']))
     # st2 = unittest.makeSuite(TestLogin)
     # st3 = unittest.TestSuite()
