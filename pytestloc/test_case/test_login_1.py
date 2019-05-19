@@ -6,7 +6,10 @@ from common.base_page import BasePage
 import unittest
 from selenium import webdriver
 from common.logpy import LogHandler
+import allure
 # t=webdriver.Chrome()
+
+@allure.feature("测试用例_1")
 @ddt
 class TestLogin(unittest.TestCase):
     global logg
@@ -27,7 +30,7 @@ class TestLogin(unittest.TestCase):
         TestLogin().test.brower_close()
         pass
     logindata = ReadExcel().getValue('login')
-
+    @allure.story("测-2")
     @data(*logindata)
     @unpack
     def test_case2(self,username,passwd,result):

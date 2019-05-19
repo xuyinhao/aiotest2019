@@ -11,7 +11,7 @@ import logging
 from selenium import webdriver
 # t=webdri
 
-@allure.feature('测试登录')
+@allure.feature('测试登录_3')
 class TestLoginCheck():
 
     def setup_class(self):
@@ -29,7 +29,7 @@ class TestLoginCheck():
         self.test.brower_close()
         pass
 
-    @allure.story('失败 登录 测试')
+    @allure.story('测试失败登录Case')
     def testcase1(self):
         username = 'adminxx1'
         passwd = 'ad'
@@ -42,8 +42,8 @@ class TestLoginCheck():
         assert self.test.check_login_result(result)
                         # msg="\r  login_test fail \r  username :%s \r    passwd : %s " %(username,passwd))
 
-    @allure.story('成功登录')
-    @allure.severity('higher')
+    @allure.story('测试成功登录case')
+    @allure.severity('critical')
     # @allure.step("账户密码期望结果：{0},{1},{2}")
     #test2
     def testcase2(self):

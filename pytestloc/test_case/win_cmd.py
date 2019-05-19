@@ -16,9 +16,8 @@ def wincmd(cmd):
 def genallure_report():
     wincmd('allure generate ./../../log/allurexml/  -o ./../../log/allurexml/report --clean')
 def runmain():
-    pytest.main(["--rootdir=../../",'-q','--alluredir',allurereporpath,testcase])
+    pytest.main(['--reruns','2',"--rootdir=../../",'-q','--alluredir',allurereporpath,testcase])
     genallure_report()
-
 if __name__ == '__main__':
     runmain()
 
