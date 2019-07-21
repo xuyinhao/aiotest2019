@@ -1,0 +1,49 @@
+2019-07-21 18:44:48,495_MainThread_[INFO] : Enter username: adminxx1
+2019-07-21 18:44:48,715_MainThread_[INFO] : Enter password: ad
+2019-07-21 18:44:49,412_MainThread_[INFO] : 登录用例 检查成功
+2019-07-21 18:44:50,178_MainThread_[INFO] : Enter username: xx2
+2019-07-21 18:44:50,361_MainThread_[INFO] : Enter password: ad22
+2019-07-21 18:44:51,003_MainThread_[INFO] : 登录用例 检查成功
+2019-07-21 18:54:19,164_MainThread_[INFO] : Enter username: admin
+2019-07-21 18:54:19,444_MainThread_[INFO] : Enter password: admin
+2019-07-21 18:54:24,521_MainThread_[INFO] : devgroup wait 5s
+2019-07-21 18:54:29,547_MainThread_[INFO] : default group exist is : True
+2019-07-21 18:54:32,138_MainThread_[INFO] : dev12 group exist is : True
+2019-07-21 18:54:40,798_MainThread_[ERROR] : devgrp_dialog_warning_add_dev_by_node_noclick_devgrp
+2019-07-21 18:54:41,294_MainThread_[INFO] : ** dialog check_dialog_warning sleep 5s...  
+2019-07-21 18:54:46,295_MainThread_[ERROR] : add_dev_by_node_noclick_devgrp error
+2019-07-21 18:54:46,361_MainThread_[ERROR] : click_btn error: Message: element click intercepted: Element <td class="has-split toe" title="...">dev12</td> is not clickable at point (445, 270). Other element would receive the click: <div class="dialog-container" index="1"></div>
+  (Session info: chrome=75.0.3770.142)
+
+2019-07-21 18:54:52,340_MainThread_[ERROR] : click_btn error: Message: element not interactable
+  (Session info: chrome=75.0.3770.142)
+
+2019-07-21 18:54:52,541_MainThread_[ERROR] : 通过nodeip增加设备 失败
+2019-07-21 18:55:12,941_MainThread_[INFO] : Enter username: admin
+2019-07-21 18:55:13,171_MainThread_[INFO] : Enter password: admin
+2019-07-21 18:55:18,644_MainThread_[INFO] : devgroup wait 5s
+2019-07-21 18:55:23,660_MainThread_[INFO] : default group exist is : True
+2019-07-21 18:55:23,927_MainThread_[INFO] : dev12 group exist is : True
+2019-07-21 18:55:25,974_MainThread_[ERROR] : click_btn error: Message: element click intercepted: Element <td class="has-split toe" title="...">dev12</td> is not clickable at point (664, 270). Other element would receive the click: <div class="dialog-container" index="1"></div>
+  (Session info: chrome=75.0.3770.142)
+
+2019-07-21 18:55:31,636_MainThread_[ERROR] : click_btn error: Message: element click intercepted: Element <div class="add-device-btn" name="byNode">...</div> is not clickable at point (50, 16). Other element would receive the click: <div class="logo-box">...</div>
+  (Session info: chrome=75.0.3770.142)
+
+2019-07-21 18:55:51,385_MainThread_[INFO] : Enter username: admin
+2019-07-21 18:55:51,625_MainThread_[INFO] : Enter password: admin
+2019-07-21 18:55:56,525_MainThread_[INFO] : devgroup wait 5s
+2019-07-21 18:56:01,544_MainThread_[INFO] : default group exist is : True
+2019-07-21 18:56:02,914_MainThread_[INFO] : 通过nodeip增加设备 成功
+2019-07-21 18:56:03,590_MainThread_[INFO] : enter_node_ip_and_click okkkk
+2019-07-21 18:56:03,590_MainThread_[INFO] : wait enter_node_ip_and_click 20s 
+2019-07-21 18:56:23,776_MainThread_[INFO] : firstdevID : 35 
+2019-07-21 18:56:31,105_MainThread_[ERROR] : devgrp_dialog_fail
+2019-07-21 18:56:31,767_MainThread_[INFO] : ** dialog check_dialog_success sleep 5s...  
+2019-07-21 18:56:36,768_MainThread_[ERROR] : check_dialog_success error
+2019-07-21 19:00:36,298_MainThread_[INFO] : Enter username: admin
+2019-07-21 19:00:36,528_MainThread_[INFO] : Enter password: admin
+2019-07-21 19:00:38,350_MainThread_[INFO] : init home page
+2019-07-21 19:00:40,085_MainThread_[INFO] : 块设备管理按钮
+2019-07-21 19:00:42,587_MainThread_[INFO] : 日志管理 页面
+2019-07-21 19:00:45,353_MainThread_[INFO] : 权限管理 页面

@@ -1,0 +1,3 @@
+INFO     root:aiologinpage.py:39 Enter username: xx2
+INFO     root:aiologinpage.py:45 Enter password: ad22
+INFO     root:base_page.py:173 登录用例 检查成功

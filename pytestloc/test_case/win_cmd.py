@@ -6,7 +6,7 @@ import time
 
 htmlname = time.strftime("%d%H%M")
 allurereporpath="../../log/allurexml"
-testcase=""
+testcase="test_login_3.py"
 # pytest.main(["--rootdir=../../","--html=../../log/report%s.html"%(str(htmlname)),"test_login_3.py"])
 
 def wincmd(cmd):
@@ -16,8 +16,8 @@ def wincmd(cmd):
 def genallure_report():
     wincmd('allure generate ./../../log/allurexml/  -o ./../../log/allurexml/report --clean')
 def runmain():
+
     pytest.main(['--reruns','2',"--rootdir=../../",'-q','--alluredir',allurereporpath,testcase])
     genallure_report()
 if __name__ == '__main__':
     runmain()
-

@@ -1,0 +1,122 @@
+{
+  "uid" : "7bf5858612fa1c0f",
+  "name" : "testcase2",
+  "fullName" : "pytestloc.test_case.test_login_3.TestLoginCheck#testcase2",
+  "historyId" : "af54617bfc142ae119c37e3b52b980bd",
+  "time" : {
+    "start" : 1563705890091,
+    "stop" : 1563705891654,
+    "duration" : 1563
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1563705884097,
+      "stop" : 1563705888344,
+      "duration" : 4247
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "54a8ea9e45fe6800",
+      "name" : "log",
+      "source" : "54a8ea9e45fe6800.txt",
+      "type" : "text/plain",
+      "size" : 6685
+    }, {
+      "uid" : "ff2449ef8579a6ef",
+      "name" : "stderr",
+      "source" : "ff2449ef8579a6ef.txt",
+      "type" : "text/plain",
+      "size" : 199
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1563705891655,
+      "stop" : 1563705891892,
+      "duration" : 237
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试成功登录case"
+  }, {
+    "name" : "feature",
+    "value" : "测试登录_3"
+  }, {
+    "name" : "parentSuite",
+    "value" : "pytestloc.test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_login_3"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLoginCheck"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-N9J4R6P"
+  }, {
+    "name" : "thread",
+    "value" : "17044-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "pytestloc.test_case.test_login_3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "fd647d6d9da5bb85",
+      "status" : "passed",
+      "time" : {
+        "start" : 1563705622050,
+        "stop" : 1563705623863,
+        "duration" : 1813
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7bf5858612fa1c0f.json",
+  "parameterValues" : [ ]
+}

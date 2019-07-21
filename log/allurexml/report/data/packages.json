@@ -1,0 +1,35 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "pytestloc.test_case.test_login_3",
+    "children" : [ {
+      "name" : "testcase1",
+      "uid" : "ab5bf4cbd9e14b84",
+      "parentUid" : "6ff025414bb0e3da598ebf4ab08e4e93",
+      "status" : "passed",
+      "time" : {
+        "start" : 1563705888346,
+        "stop" : 1563705890070,
+        "duration" : 1724
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testcase2",
+      "uid" : "7bf5858612fa1c0f",
+      "parentUid" : "6ff025414bb0e3da598ebf4ab08e4e93",
+      "status" : "passed",
+      "time" : {
+        "start" : 1563705890091,
+        "stop" : 1563705891654,
+        "duration" : 1563
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "pytestloc.test_case.test_login_3"
+  } ]
+}

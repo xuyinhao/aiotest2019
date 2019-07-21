@@ -53,7 +53,7 @@ class HomePage(AioLogin):
         return self.click_btn(*self.devgrp_manager_menu)
 
     def click_block_manager_menu(self):
-        logg.info("块设备管理按钮")
+        logg.info("块设备管理 页面")
         self.click_service_overview()
         self.click_store_menu()
         return self.click_btn(*self.block_manager_menu)

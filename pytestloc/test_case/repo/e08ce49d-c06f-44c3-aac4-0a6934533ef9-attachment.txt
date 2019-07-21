@@ -1,3 +1,0 @@
-aiologinpage.py             39 INFO     Enter username: adminxx1
-aiologinpage.py             45 INFO     Enter password: ad
-base_page.py               169 ERROR    登录失败

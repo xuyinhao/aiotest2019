@@ -1,0 +1,6 @@
+aiologinpage.py:39 2019-07-21 18:40:20_[INFO]: Enter username: adminxx1
+aiologinpage.py:45 2019-07-21 18:40:20_[INFO]: Enter password: ad
+base_page.py:173 2019-07-21 18:40:21_[INFO]: 登录用例 检查成功
+aiologinpage.py:39 2019-07-21 18:40:22_[INFO]: Enter username: xx2
+aiologinpage.py:45 2019-07-21 18:40:22_[INFO]: Enter password: ad22
+base_page.py:173 2019-07-21 18:40:23_[INFO]: 登录用例 检查成功

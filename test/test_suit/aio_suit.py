@@ -1,9 +1,10 @@
 from common import htmlrunner
-
+from test.testcase import aiologin
+import unittest
 if __name__ == '__main__':
     runner = htmlrunner.GenHtmlReport().reportgen('aio-1','no description')
 
-    # st1 = unittest.TestLoader().loadTestsFromModule(aiologin)
+    st1 = unittest.TestLoader().loadTestsFromModule(aiologin)
 
     runner.run(st1)
 

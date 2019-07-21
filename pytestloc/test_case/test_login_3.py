@@ -43,7 +43,7 @@ class TestLoginCheck():
                         # msg="\r  login_test fail \r  username :%s \r    passwd : %s " %(username,passwd))
 
     @allure.story('测试成功登录case')
-    @allure.severity('critical')
+    #@allure.severity('critical')
     # @allure.step("账户密码期望结果：{0},{1},{2}")
     #test2
     def testcase2(self):

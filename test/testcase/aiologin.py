@@ -1,12 +1,16 @@
-from time import sleep
-from ddt import data,ddt,unpack
-from data.readexcel import  ReadExcel
-from common.pageObject import aiologinpage
-from common.base_page import BasePage
-import unittest
-from selenium import webdriver
-from common.logpy import LogHandler
+try:
+    from time import sleep
+    from ddt import data,ddt,unpack
+    from data.readexcel import  ReadExcel
+    from common.pageObject import aiologinpage
+    from common.base_page import BasePage
+    import unittest
+    from selenium import webdriver
+    from common.logpy import LogHandler
 # t=webdriver.Chrome()
+except ImportError as e:
+    print('import error')
+
 @ddt
 class TestLogin(unittest.TestCase):
     global logg
