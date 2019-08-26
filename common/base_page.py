@@ -9,6 +9,9 @@ from common.logpy import LogHandler
 import sys,os,time
 from time import sleep
 
+error_dialog = (By.CLASS_NAME,"dialog-error")
+success_dialog = (By.CLASS_NAME,"dialog-success")
+waring_dialog = (By.CLASS_NAME,"dialog-warning")
 class BasePage():
     '''
     页面的BasePage
@@ -16,14 +19,15 @@ class BasePage():
     '''
     global logg
     logg = LogHandler().logger
-    # def __init__(self,driver=webdriver.Chrome(),url=None):
-    def __init__(self,driver,url=None):
+    def __init__(self,driver=webdriver.Chrome(),url=None):
+    # def __init__(self,driver,url=None):
         '''
                         初始化 webdriver 并启动
         :param driver:  webdriver.Chrome()
         '''
         self.wd = driver
-        self.wd.implicitly_wait(5)
+        # self.wd.implicitly_wait(5)
+        self.wd.implicitly_wait(3)
         self.actions = ActionChains(self.wd)
         if url :
             self.url = url
@@ -176,6 +180,15 @@ class BasePage():
         sleep(0.2)
         logg.debug(imgname)
         self.__inser_img("debug",imgname)
+
+    def check_dialog_success(self,value):
+        if self.check_element_isexist(success_dialog):
+            flag = True
+            self.insert_success_img(value+"_dialog_success")
+        else:
+            flag = False
+            self.insert_error_img(value+"_dialog_fail")
+        return flag
 
     @classmethod
     def server_url_conf(cls):
