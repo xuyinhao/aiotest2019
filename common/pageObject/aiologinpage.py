@@ -85,14 +85,14 @@ class AioLogin(BasePage):
                 self.insert_error_img('登录用例 检查失败')
         return flag
 
-    def correct_userpasswd_conf(self):
+    def __correct_userpasswd_conf(self):
         self.tusername = readconfig.ReadConfig().get_configinfo('user','tuser')
         self.tpassword = readconfig.ReadConfig().get_configinfo('user','tpassword')
         self.urlvalue = (self.tusername,self.tpassword)
         return self.urlvalue
     def correct_login(self,OEM=None):
         self.get_conf_url()
-        self.userpasswd = self.correct_userpasswd_conf()
+        self.userpasswd = self.__correct_userpasswd_conf()
         self.set_username(self.userpasswd[0])
         self.set_password(self.userpasswd[1])
         login_result = self.type_login_btn(OEM=OEM)
