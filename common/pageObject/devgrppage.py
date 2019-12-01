@@ -105,9 +105,9 @@ class DevgrpPage(HomePage):
         else:
             flag = False
             self.insert_error_img("devgrp_dialog_fail")
-        sleeptime = 5
-        logg.info("** dialog check_dialog_success sleep %ss...  "%(sleeptime))
-        sleep(sleeptime)
+        # sleeptime = 5
+        # logg.info("** dialog check_dialog_success sleep %ss...  "%(sleeptime))
+        # sleep(sleeptime)
         return flag
 
     def move_to_add_dev(self):
@@ -151,7 +151,7 @@ class DevgrpPage(HomePage):
         else:
             logg.error("enter_node_ip_and_click error ")
             return False
-        waittime = 20
+        waittime = 5
         logg.info("wait enter_node_ip_and_click %ss " %(waittime))
         sleep(waittime)
         if self.check_searchbynodeip_devlist_result():
@@ -187,6 +187,7 @@ class DevgrpPage(HomePage):
 
     def add_dev_to_devgrp_by_nodeip(self,devgrpname,nodeip):
         """仅仅添加第一个设备到devgrpname"""
+        sleep(1)
         if self.click_devgroup_name(devgrpname):
             if self.add_dev_by_nodeip():
                 if self.enter_node_ip_and_click(nodeip):

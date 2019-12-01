@@ -12,6 +12,7 @@ class HomePage(AioLogin):
     logg = LogHandler().getlog()
     service_overview_menu = (By.CSS_SELECTOR,"div.menu-content[data-title='服务概况']")
     store_menu = (By.CSS_SELECTOR,"div.menu-content[data-title='云存储']")
+    setting_menu = (By.CSS_SELECTOR,"div.menu-content[data-title='设置']")
     service_manager_menu = (By.CSS_SELECTOR,"div.menu-content[data-title='服务管理']")
     client_manager_menu = (By.CSS_SELECTOR,"div.menu-content[data-title='应用管理']")
     devgrp_manager_menu = (By.CSS_SELECTOR,"div.menu-content[data-title='设备分组管理']")
@@ -36,7 +37,13 @@ class HomePage(AioLogin):
         '''
         self.click_btn(*self.store_menu)
         sleep(1)
-
+    def click_setting_menu(self):
+        """
+        点击 设置
+        :return:
+        """
+        self.click_btn(*self.setting_menu)
+        sleep(1)
     def click_service_manager_menu(self):
         self.click_service_overview()
         self.click_store_menu()
