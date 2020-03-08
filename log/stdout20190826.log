@@ -1,7 +1,0 @@
-2019-08-26 17:53:30,418_MainThread_[INFO] : Enter username: admin
-2019-08-26 17:53:30,640_MainThread_[INFO] : Enter password: admin
-2019-08-26 17:53:31,888_MainThread_[INFO] : init home page
-2019-08-26 17:53:33,466_MainThread_[INFO] : init and click setting menu
-2019-08-26 17:53:33,557_MainThread_[INFO] : click store setting menu 
-2019-08-26 17:53:35,559_MainThread_[INFO] : set client  port:1234
-2019-08-26 17:53:38,686_MainThread_[INFO] : 设置端口_dialog_success

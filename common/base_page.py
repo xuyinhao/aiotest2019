@@ -42,6 +42,7 @@ class BasePage():
         self.wd.get(self.url)
         self.wd.maximize_window()
         logg.debug("enter conf_url : " + str(self.url))
+        return  True
 
     def brower_close(self):
         '''关闭一个窗口'''

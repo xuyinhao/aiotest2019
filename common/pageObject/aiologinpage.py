@@ -24,8 +24,9 @@ class AioLogin(BasePage):
     logg.debug(elements)
     def get_and_check_server_url(self,OEMtitle=None):
         self.get_conf_url()
+        sleep(3)
         if not OEMtitle:
-            if "LoongUI" != self.get_title():
+            if "" != self.get_title():
                 return False
         elif OEMtitle != self.get_title():
             return False
