@@ -16,7 +16,7 @@ class LogHandler():
         self.logging = logging
         #1.c创建logger
         self.logger = self.logging.getLogger(logger)
-        self.logger.setLevel(self.logging.NOTSET) #log级别总开关
+        self.logger.setLevel(self.logging.DEBUG) #log级别总开关
         formatter = self.logging.Formatter('%(asctime)s_%(threadName)s_[%(levelname)s] : %(message)s')
 
         #2 创建handler
@@ -60,9 +60,11 @@ class LogHandler():
     def getlog(self):
         return self.logger
 if __name__ == '__main__':
-    a=LogHandler().getlog()
-    n=LogHandler().getlog()
-    a.error('这是debug')
+    a=LogHandler(logger='aaa').getlog()
+    n=LogHandler(logger="nnn").getlog()
+    a.debug('这是debug')
+    n.error('这是错误信息')
+
     # a.logger.info("这是info")
     # a.logger.warning("这是warning")
     # a.logger.error("这是error")
