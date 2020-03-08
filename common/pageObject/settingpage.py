@@ -11,12 +11,14 @@ from conf import readconfig
 class SettingPage(HomePage):
     global logg
     logg = LogHandler().getlog()
+    #系统设置，设置菜单：基础设置、存储管理设置、虚拟云设置
     base_setting_menu = (By.XPATH,"//div[@id='settingLeft']/div[1]")
     store_setting_menu = (By.XPATH,"//div[@id='settingLeft']/div[2]")
     cloud_setting_menu = (By.XPATH,"//div[@id='settingLeft']/div[3]")
     cltport_setting_menu = (By.XPATH,"//div[contains(text(),'客户端端口设置')]")
-    cltport_num = (By.CSS_SELECTOR,"input.setting-input")
+    cltport_num=(By.NAME,"port")
     cltport_save_btn = (By.NAME,"set-port")
+
     layout_setting_menu = (By.XPATH,"//div[contains(text(),'文件分布')]")
     getalarm_setting_menu = (By.XPATH,"//div[contains(text(),'告警订阅')]")
     netcardwarn_setting_menu = (By.XPATH,"//div[contains(text(),'网卡报警管理')]")

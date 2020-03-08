@@ -19,12 +19,14 @@ class BasePage():
     '''
     global logg
     logg = LogHandler().logger
-    def __init__(self,driver=webdriver.Chrome(),url=None):
-    # def __init__(self,driver,url=None):
+
+    # def __init__(self,driver=webdriver.Chrome(),url=None):
+    def __init__(self,driver,url=None):
         '''
                         初始化 webdriver 并启动
         :param driver:  webdriver.Chrome()
         '''
+
         self.wd = driver
         # self.wd.implicitly_wait(5)
         self.wd.implicitly_wait(3)
@@ -42,6 +44,13 @@ class BasePage():
         self.wd.get(self.url)
         self.wd.maximize_window()
         logg.debug("enter conf_url : " + str(self.url))
+        try:
+            self.wd.find_element_by_id("details-button").click()
+            self.wd.find_element_by_id("proceed-link").click()
+        except:
+            pass
+        finally:
+            time.sleep(2)
         return  True
 
     def brower_close(self):
@@ -110,6 +119,7 @@ class BasePage():
     def mouse_move_to_element(self,*loc):
         elem = self.find_web_element(*loc)
         self.actions.move_to_element(elem).perform()
+
     def mouse_drag_and_drop(self):
         pass
     #获取信息行为

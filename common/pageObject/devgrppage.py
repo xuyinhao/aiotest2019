@@ -39,8 +39,8 @@ class DevgrpPage(HomePage):
         flag =True
         self.correct_login()
         self.click_devgrp_manager_menu()
-        logg.info("devgroup wait 5s")
-        sleep(5)
+        logg.info("devgroup wait 3s")
+        sleep(3)
         # self.click_btn(*self.check_default)
         if not self.check_groupname_result("default"):
             logg.error('initweb check default grp : error' )
@@ -50,10 +50,16 @@ class DevgrpPage(HomePage):
 
     def create_devgrp(self,devgrpname):
         flag = True
+
+        if self.check_groupname_result(devgrpname):
+            logg.warn('Dev group %s already exist' % devgrpname)
+            return False
+
         self.click_btn(*self.create_devgrp_loc)
         self.type_text(self.input_devgrp_name_loc,devgrpname)
         self.click_btn(*self.input_devgrp_name_confirm)
-        print(*self.input_devgrp_name_confirm)
+        logg.debug(print(*self.input_devgrp_name_confirm))
+
         if not self.check_groupname_result(devgrpname):
             self.insert_error_img('** check %s grp : error ' %(devgrpname))
             flag = False
@@ -237,11 +243,11 @@ class DevgrpPage(HomePage):
 if __name__ == '__main__':
     test = DevgrpPage(webdriver.Chrome())
     test.init_web()
-    # test.create_devgrp("dev12")
+    test.create_devgrp("dev12")
     # if test.click_devgroup_name("dev12"):
     #     test.add_dev_by_node_noclick_devgrp()
    #支持按照ip为分组添加设备（默认是第一个dev）
-    print(test.add_dev_to_devgrp_by_nodeip("dev12","10.11.12.30"))
+    print(test.add_dev_to_devgrp_by_nodeip("dev12","13.10.12.30"))
 
 
 

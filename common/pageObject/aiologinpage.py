@@ -106,7 +106,7 @@ if __name__ == '__main__':
     test=AioLogin(webdriver.Chrome())
     test.get_conf_url()
     test.set_username('admin')
-    test.set_password('admin1')
+    test.set_password('admin')
     test.type_login_btn()
     # print(test.check_login_result(False))
     # test.set_username('xx')

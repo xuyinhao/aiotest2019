@@ -19,7 +19,7 @@ class TestLoginCheck():
         global logg
         logg = logging.getLogger()
         self.test = aiologinpage.AioLogin(webdriver.Chrome())
-        getandcheck = self.test.get_and_check_server_url()
+        getandcheck = self.test.get_conf_url()
         if not getandcheck:
             TestLoginCheck().teardown_class()
             logg.error("进入主页失败，err:14001")

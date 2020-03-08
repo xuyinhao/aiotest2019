@@ -18,7 +18,7 @@ class TestLogin(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.test = aiologinpage.AioLogin(webdriver.Chrome())
-        getandcheck = cls.test.get_and_check_server_url()
+        getandcheck = cls.test.get_conf_url()
         if not getandcheck:
             TestLogin.tearDownClass()
             logg.error("进入主页失败，err:14001")

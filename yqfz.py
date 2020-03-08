@@ -6,9 +6,12 @@ from bs4 import BeautifulSoup
 import sys
 import re
 WAIT_TIME = 0.5
+mylog = LogHandler(logger="yqfz").getlog()
+
 #输入项目名
 def project_name_input(pro_name):
     wd.find_element_by_id("ctl00_MainContent_txt_Pro").send_keys(pro_name)
+    mylog.error("输入项目:"+pro_name)
     sleep(WAIT_TIME)
 
 #房产公司名称
@@ -176,8 +179,10 @@ def write_info_to_excel(listInfo,num):
 
 if __name__ == '__main__':
     open_excel()
+    # has no attribute 'CLSIDToClassMap' 解决方法 ：https://blog.csdn.net/wangzhiqin365/article/details/84643452
+    # 删除缓存文件 C:\Users\test\AppData\Local\Temp\gen_py\3.7
   #  nameList=["怡邻","青灯","淞泽","阳澄","悬珠","新娄花园","亭苑","厦亭","青苑","滨江苑"]
-    nameList=["青剑湖","莲香新村","荷韵新村","古娄","畅苑"]
+    nameList=["青剑湖"]
     add_sheet("ttt2")
     num = 0
     for xqname in nameList:

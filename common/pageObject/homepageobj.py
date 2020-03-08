@@ -15,7 +15,7 @@ class HomePage(AioLogin):
     setting_menu = (By.CSS_SELECTOR,"div.menu-content[data-title='设置']")
     service_manager_menu = (By.CSS_SELECTOR,"div.menu-content[data-title='服务管理']")
     client_manager_menu = (By.CSS_SELECTOR,"div.menu-content[data-title='应用管理']")
-    devgrp_manager_menu = (By.CSS_SELECTOR,"div.menu-content[data-title='设备分组管理']")
+    devgrp_manager_menu = (By.CSS_SELECTOR,"div.menu-content[data-title='存储池管理']")
     block_manager_menu = (By.CSS_SELECTOR,"div.menu-content[data-title='块设备管理']")
     file_manager_menu = (By.CSS_SELECTOR,"div.menu-content[data-title='文件管理']")
     perm_manager_menu = (By.CSS_SELECTOR,"div.menu-content[data-title='权限管理']")
@@ -60,6 +60,10 @@ class HomePage(AioLogin):
         return self.click_btn(*self.devgrp_manager_menu)
 
     def click_block_manager_menu(self):
+        """
+        点击 块设备管理界面
+        :return:
+        """
         logg.info("块设备管理 页面")
         self.click_service_overview()
         self.click_store_menu()

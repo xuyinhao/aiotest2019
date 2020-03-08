@@ -10,6 +10,7 @@ try:
 # t=webdriver.Chrome()
 except ImportError as e:
     print('import error')
+    exit(-3001)
 
 @ddt
 class TestLogin(unittest.TestCase):
@@ -17,17 +18,17 @@ class TestLogin(unittest.TestCase):
     logg = LogHandler().getlog()
     @classmethod
     def setUpClass(cls):
-
         cls.test = aiologinpage.AioLogin(webdriver.Chrome())
         cls.test.get_conf_url()
        # print('start TestSearch')
+
     @classmethod
     def tearDownClass(cls):
         # TestLogin().logg.info("brower quit")
         TestLogin().test.brower_close()
         pass
-    logindata = ReadExcel().getValue('login')
 
+    logindata = ReadExcel().getValue('login')
     @data(*logindata)
     @unpack
     def testcase2(self,username,passwd,result):
