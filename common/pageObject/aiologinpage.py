@@ -1,4 +1,4 @@
-#PageObject（页面对象），
+# PageObject（页面对象），
 # 简单点说就是把界面定位和业务操作分开。
 # 这个框架主要是把UI自动化分为三层：对象库层、操作层和业务层。
 from selenium import webdriver
@@ -9,20 +9,15 @@ from selenium.webdriver.common.keys import Keys
 from time import sleep
 from conf import readconfig
 import logging
+from common.global_element import GlobalElements
+
 
 class AioLogin(BasePage):
     global logg
     logg = LogHandler().getlog()
+    e_login = GlobalElements.login
 
-    username_loc = (By.NAME, "username")
-    password_loc = (By.CSS_SELECTOR, "input[type='password']")
-    login_loc = (By.CLASS_NAME, "login-btn")
-    login_loc_oem = (By.ID,"submit")
-    check_login_loc = (By.CLASS_NAME,"error-tip")
-    elements = [username_loc,password_loc,login_loc,check_login_loc]
-    log_menu = (By.CSS_SELECTOR,"[name='log']")
-    logg.debug(elements)
-    def get_and_check_server_url(self,OEMtitle=None):
+    def get_and_check_server_url(self, OEMtitle=None):
         self.get_conf_url()
         sleep(3)
         if not OEMtitle:
@@ -32,43 +27,44 @@ class AioLogin(BasePage):
             return False
         return True
 
-    def set_username(self,username):
-       # self.find_element(*self.username_loc).clear()
-        #self.find_element(*self.username_loc).send_keys(username)
-        self.clear_text(*self.username_loc)
-        self.type_text(self.username_loc,username)
+    def set_username(self, username):
+        # self.find_element(*self.username_loc).clear()
+        # self.find_element(*self.username_loc).send_keys(username)
+        self.clear_text(*self.e_login.username_loc)
+        self.type_text(self.e_login.username_loc, username)
         logg.info('Enter username: ' + username)
         sleep(0.1)
 
-    def set_password(self,password):
-        self.clear_text(*self.password_loc)
-        self.type_text(self.password_loc,password)
+    def set_password(self, password):
+        self.clear_text(*self.e_login.password_loc)
+        self.type_text(self.e_login.password_loc, password)
         logg.info('Enter password: ' + password)
         sleep(0.1)
 
-    def type_login_btn(self,OEM=None):
+    def type_login_btn(self, OEM=None):
         if OEM:
-            flag = self.click_btn(*self.login_loc_oem)
+            flag = self.click_btn(*self.e_login.login_loc_oem)
         else:
-            flag = self.click_btn(*self.login_loc)
+            flag = self.click_btn(*self.e_login.login_loc)
         sleep(0.1)
-        return  flag
+        return flag
 
     def _check_login_ok(self):
         ok_class_result = False
-        ok_class_result = self.check_element_isexist(self.log_menu)
+        ok_class_result = self.check_element_isexist(self.e_login.log_menu)
         logg.debug("__check login " + str(ok_class_result))
         sleep(0.2)
         # self.insert_success_img('check_login_ok')
         return ok_class_result
+
     def _check_login_fail(self):
         fail_class_result = False
-        fail_class_result = self.check_element_isexist(self.login_loc)
-        logg.debug("__check not login" +str(fail_class_result))
+        fail_class_result = self.check_element_isexist(self.e_login.login_loc)
+        logg.debug("__check not login" + str(fail_class_result))
         sleep(0.1)
         return fail_class_result
 
-    def check_login_result(self,testcase_login_expected_result):
+    def check_login_result(self, testcase_login_expected_result):
         flag = None
         if testcase_login_expected_result:
             if self._check_login_ok():
@@ -87,11 +83,12 @@ class AioLogin(BasePage):
         return flag
 
     def __correct_userpasswd_conf(self):
-        self.tusername = readconfig.ReadConfig().get_configinfo('user','tuser')
-        self.tpassword = readconfig.ReadConfig().get_configinfo('user','tpassword')
-        self.urlvalue = (self.tusername,self.tpassword)
+        self.tusername = readconfig.ReadConfig().get_configinfo('user', 'tuser')
+        self.tpassword = readconfig.ReadConfig().get_configinfo('user', 'tpassword')
+        self.urlvalue = (self.tusername, self.tpassword)
         return self.urlvalue
-    def correct_login(self,OEM=None):
+
+    def correct_login(self, OEM=None):
         self.get_conf_url()
         self.userpasswd = self.__correct_userpasswd_conf()
         self.set_username(self.userpasswd[0])
@@ -103,7 +100,7 @@ class AioLogin(BasePage):
 if __name__ == '__main__':
     # test=AioLogin(webdriver.Chrome(),"http://13.10.47.6:8088")
     # test.correct_login(OEM=True)
-    test=AioLogin(webdriver.Chrome())
+    test = AioLogin(webdriver.Chrome())
     test.get_conf_url()
     test.set_username('admin')
     test.set_password('admin')
@@ -114,5 +111,3 @@ if __name__ == '__main__':
     # test.type_login_btn()
     # print(test.check_login_result(True))
     # test.brower_close()
-
-

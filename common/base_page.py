@@ -5,13 +5,12 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
 from common.logpy import LogHandler
+from common.global_element import GlobalElements
 
-import sys,os,time
+import sys, os, time
 from time import sleep
 
-error_dialog = (By.CLASS_NAME,"dialog-error")
-success_dialog = (By.CLASS_NAME,"dialog-success")
-waring_dialog = (By.CLASS_NAME,"dialog-warning")
+
 class BasePage():
     '''
     页面的BasePage
@@ -19,23 +18,27 @@ class BasePage():
     '''
     global logg
     logg = LogHandler().logger
+    e_common = GlobalElements.common
 
     # def __init__(self,driver=webdriver.Chrome(),url=None):
-    def __init__(self,driver,url=None):
+    def __init__(self, driver=None, url=None):
         '''
                         初始化 webdriver 并启动
         :param driver:  webdriver.Chrome()
         '''
-
-        self.wd = driver
+        if driver:
+            self.wd = driver
+        else:
+            self.wd = webdriver.Chrome()
         # self.wd.implicitly_wait(5)
         self.wd.implicitly_wait(3)
         self.actions = ActionChains(self.wd)
-        if url :
+        if url:
             self.url = url
         else:
             self.url = self.server_url_conf()
-    #浏览器行为
+
+    # 浏览器行为
     def get_conf_url(self):
         '''
         获取配置文件中的测试url
@@ -51,87 +54,113 @@ class BasePage():
             pass
         finally:
             time.sleep(2)
-        return  True
+        return True
 
     def brower_close(self):
         '''关闭一个窗口'''
         return self.wd.close()
+
     def brower_quit_all(self):
         '''退出浏览器'''
         return self.wd.quit()
-    
-    def brower_setwindowssize(self,width,height,windowHandle='current'):
-        self.wd.set_window_size(width,height,windowHandle)
-        
+
+    def brower_setwindowssize(self, width, height, windowHandle='current'):
+        self.wd.set_window_size(width, height, windowHandle)
+
     def brower_refresh(self):
         self.wd.refresh()
-        
+
     def brower_forward(self):
         self.wd.forward()
-        
+
     def brower_backward(self):
         self.wd.back()
+        # excel，字符串型 转换成 webdriver by
 
-    #定位
-    def find_web_element(self,*loc):
-        #self.wd.find_element(*loc)
+    def _transf_bykey(self, loc):
+
+        if loc[0] == "By.NAME":
+            return (By.NAME, loc[1])
+        if loc[0] == "By.CLASS_NAME":
+            return (By.CLASS_NAME, loc[1])
+        if loc[0] == "By.CSS_SELECTOR":
+            return (By.CSS_SELECTOR, loc[1])
+        if loc[0] == "By.XPATH":
+            return (By.XPATH, loc[1])
+        logg.info('transf elements : ' + str(loc))
+
+        return loc
+
+    # 定位
+    def find_web_element(self, *loc):
+        # self.wd.find_element(*loc)
+        # loc = loc[0]
+        # print('-------',loc)
+        loc = self._transf_bykey(loc)
+        # print('*****',loc)
+
         return self.wd.find_element(*loc)
 
-    #元素操作
-    def type_text(self,loc,text):
-        return  self.wd.find_element(*loc).send_keys(text)
-    
-    def clear_text(self,*loc):
+    # 元素操作
+    def type_text(self, loc, text):
+        return self.wd.find_element(*loc).send_keys(text)
+
+    def clear_text(self, *loc):
         return self.wd.find_element(*loc).clear()
 
-    def submit_func(self,*loc):
+    def submit_func(self, *loc):
         ''' 提交
          loc : (By.ID,"id")
          '''
         return self.wd.find_element(*loc).submit()
 
-    def click_btn(self,*loc):
+    def click_btn(self, *loc):
         '''点击按钮'''
         try:
             self.wd.find_element(*loc).click()
             return True
         except Exception as e:
-            logg.error("click_btn error: %s" %(e))
+            logg.error("click_btn error: %s" % (e))
             return False
 
     # def keyboard_send_f5(self):
     #     loc = (By.CSS_SELECTOR,"[name='log']")
     #     self.find_web_element(*loc).send_keys(Keys.F5)
-    
-    #鼠标操作
-    def mouse_right_click(self,*loc):
+
+    # 鼠标操作
+    def mouse_right_click(self, *loc):
         elem = self.find_web_element(*loc)
         self.actions.click(elem).perform(
-                                         )
-    def mouse_left_click(self,*loc):
+        )
+
+    def mouse_left_click(self, *loc):
         elem = self.find_web_element(*loc)
         self.actions.context_click(elem).perform()
-        
-    def mouse_double_click(self,*loc):
+
+    def mouse_double_click(self, *loc):
         elem = self.find_web_element(*loc)
         self.actions.double_click(elem)
-        
-    def mouse_move_to_element(self,*loc):
+
+    def mouse_move_to_element(self, *loc):
+        loc = self._transf_bykey(loc)
         elem = self.find_web_element(*loc)
         self.actions.move_to_element(elem).perform()
 
     def mouse_drag_and_drop(self):
         pass
-    #获取信息行为
+
+    # 获取信息行为
     def get_web_url(self):
         return self.wd.current_url
+
     def get_title(self):
-        return  self.wd.title
-    def get_element_text(self,*loc):
+        return self.wd.title
+
+    def get_element_text(self, *loc):
         return self.find_web_element(*loc).text
 
-    #元素是否存在 是 True
-    def check_element_isexist(self,loc):
+    # 元素是否存在 是 True
+    def check_element_isexist(self, loc):
         '''
         检查元素是否存在
         :param loc:  tuple (By.ID,"id")
@@ -139,14 +168,18 @@ class BasePage():
         '''
         isexist = False
         try:
-            EC.presence_of_element_located(loc)(self.wd)
+            sleep(2)
+            EC.presence_of_element_located(self._transf_bykey(loc))(self.wd)
+            # EC.presence_of_element_located(loc)(self.wd)
             isexist = True
+            logg.debug('isexist : True ')
         except Exception as e:
             isexist = False
-            logg.debug(' isexist or not  :',exc_info = True)
+            # logg.debug(' isexist or not  :',exc_info = True)
+            logg.debug(' isexist or not  :', exc_info=True)
         return isexist
 
-    def check_element_has_text(self,loc,text):
+    def check_element_has_text(self, loc, text):
         '''
         检查元素文本信息是否存在
         :param loc:  tuple(By.ID,"id")
@@ -154,10 +187,11 @@ class BasePage():
         :return:  True or False
         '''
         try:
-            text = EC.text_to_be_present_in_element(loc,text)(self.wd)
+            text = EC.text_to_be_present_in_element(loc, text)(self.wd)
         finally:
             return text
-    def check_element_isdisplayed(self,*loc):
+
+    def check_element_isdisplayed(self, *loc):
         flag = True
         try:
             self.find_web_element(*loc).is_displayed()
@@ -169,36 +203,41 @@ class BasePage():
         # else:
         #     isdisable = False
         # return isdisable
-    def __inser_img(self,passorfailed,imgname):
-        time_loc = time.strftime("%m%d_%H%M%S",time.localtime())
-        file_path = os.path.abspath(__file__)
-        file_path = os.path.join(file_path+"/../../log/%s_%s_%s.png" %(passorfailed,imgname,time_loc))
-        self.wd.get_screenshot_as_file(file_path)
-        logg.debug('Insert— %s_img %s ' %(passorfailed,(file_path)))
 
-    def insert_warning_img(self,imgname):
+    def __inser_img(self, passorfailed, imgname):
+        time_loc = time.strftime("%m%d_%H%M%S", time.localtime())
+        file_path = os.path.abspath(__file__)
+        file_path = os.path.join(file_path + "/../../log/%s_%s_%s.png" % (passorfailed, imgname, time_loc))
+        self.wd.get_screenshot_as_file(file_path)
+        logg.debug('Insert— %s_img %s ' % (passorfailed, (file_path)))
+
+    def insert_warning_img(self, imgname):
         sleep(0.5)
-        self.__inser_img("waring",imgname)
-    def insert_error_img(self,imgname):
+        logg.warn(imgname)
+        self.__inser_img("waring", imgname)
+
+    def insert_error_img(self, imgname):
         sleep(0.2)
         logg.error(imgname)
-        self.__inser_img("error",imgname)
-    def insert_success_img(self,imgname):
+        self.__inser_img("error", imgname)
+
+    def insert_success_img(self, imgname):
         sleep(0.2)
         logg.info(imgname)
-        self.__inser_img("success",imgname)
-    def insert_debug_img(self,imgname):
+        self.__inser_img("success", imgname)
+
+    def insert_debug_img(self, imgname):
         sleep(0.2)
         logg.debug(imgname)
-        self.__inser_img("debug",imgname)
+        self.__inser_img("debug", imgname)
 
-    def check_dialog_success(self,value):
-        if self.check_element_isexist(success_dialog):
+    def check_dialog_success(self, value):
+        if self.check_element_isexist(self.e_common.success_dialog):
             flag = True
-            self.insert_success_img(value+"_dialog_success")
+            self.insert_success_img(value + "_dialog_success")
         else:
             flag = False
-            self.insert_error_img(value+"_dialog_fail")
+            self.insert_error_img(value + "_dialog_fail")
         return flag
 
     @classmethod
@@ -209,16 +248,19 @@ class BasePage():
 
         return urlvalue
 
+
 if __name__ == '__main__':
     test = BasePage(webdriver.Chrome())
     test.get_conf_url()
     a = (By.CLASS_NAME, "login-btn")
-    test.mouse_move_to_element(*a)
-  #   print(test.get_web_url())
-  # #  print(test.getTitle())
-  #   f_loc = (By.CLASS_NAME,"login-title")
-  # #   print(test.check_element_has_text(f_loc,"POPO"))
-  #   ff = test.get_element_text(*f_loc)
-  #   print(ff)
-  #
-  #   test.brower_quit_all()
+    a = ("By.CLASS_NAME", "login-btn")
+    # test.mouse_move_to_element(*a)
+    print(test.check_element_isexist(a))
+    #   print(test.get_web_url())
+    # #  print(test.getTitle())
+    #   f_loc = (By.CLASS_NAME,"login-title")
+    # #   print(test.check_element_has_text(f_loc,"POPO"))
+    #   ff = test.get_element_text(*f_loc)
+    #   print(ff)
+    #
+    test.brower_quit_all()

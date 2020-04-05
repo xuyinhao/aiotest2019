@@ -59,6 +59,7 @@ class LogHandler():
         return console_log_level
     def getlog(self):
         return self.logger
+
 if __name__ == '__main__':
     a=LogHandler(logger='aaa').getlog()
     n=LogHandler(logger="nnn").getlog()
